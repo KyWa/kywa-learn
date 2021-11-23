@@ -1,21 +1,23 @@
 apiVersion: tekton.dev/v1beta1
 kind: Pipeline
 metadata:
-  name: pipeline-build
+  name: build-pipeline
 spec:
   workspaces:
-    - name: myworkspace
+    - name: build
+    - name: ssh-creds
   tasks:
     - name: fetch-repository
       taskRef:
         name: git-clone
       workspaces:
+        - name: ssh-directory
+          workspace: ssh-creds
         - name: output
-          workspace: myworkspace
+          workspace: build
       params:
         - name: url
-          #value: git@github.com:KyWa/dockerbuilds.git
-          value: https://github.com/KyWa/dockerbuilds
+          value: git@github.com:KyWa/dockerbuilds.git
         - name: deleteExisting
           value: "true"
     - name: build
@@ -24,11 +26,10 @@ spec:
       runAfter:
         - fetch-repository
       params:
-        - name: IMAGE
+        - name: image
           value: quay.io/kywa/go-env
-        - name: IMAGE_PUSH_SECRET_NAME
-          value: image-pull-secret
+        - name: dockerfile_path
+          value: go-env
       workspaces:
-        - name: source
-          workspace: myworkspace
-
+        - name: builder
+          workspace: build

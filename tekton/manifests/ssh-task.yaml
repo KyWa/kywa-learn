@@ -4,43 +4,39 @@ metadata:
   name: buildah
 spec:
   params:
-    - name: IMAGE
+    - name: image
       description: Reference of the image buildah will produce.
     - name: STORAGE_DRIVER
       description: Set buildah storage driver
       default: overlay
-    - name: DOCKERFILE # Make this a value passed in or change path in build pipeline (or git clone path)
-      description: Path to the Dockerfile to build.
-      default: go-env/Dockerfile
-    - name: IMAGE_PUSH_SECRET_NAME
-      description: Kubernetes secrets contain image push username and password
+    - name: dockerfile_path 
+      description: "Path to the Dockerfile to build. If repo has multiple directories for builds, give full path to the Dockerfile: path/to/Dockerfile"
+      default: Dockerfile
   workspaces:
-    - name: source
+    - name: builder
   steps:
     - name: build
       image: quay.io/containers/buildah:v1.23.1
-      workingDir: $(workspaces.source.path)
+      workingDir: $(workspaces.builder.path)
+      securityContext:
+        privileged: true
       script: |
-        buildah --storage-driver=$(params.STORAGE_DRIVER) build \
-          --no-cache -f $(params.DOCKERFILE) -t $(params.IMAGE) .
+        buildah --storage-driver=$(params.STORAGE_DRIVER) build --no-cache -f $(params.dockerfile_path) -t $(params.image) .
       volumeMounts:
         - name: varlibcontainers
           mountPath: /var/lib/containers
-      securityContext:
-        privileged: true
     - name: push
       image: quay.io/containers/buildah:v1.23.1
-      workingDir: $(workspaces.source.path)
+      workingDir: $(workspaces.builder.path)
+      securityContext:
+        privileged: true
       script: |
-        buildah --storage-driver=$(params.STORAGE_DRIVER) push \
-          --authfile /tmp/authfile/auth $(params.IMAGE)
+        buildah --storage-driver=$(params.STORAGE_DRIVER) push --authfile /tmp/authfile/auth $(params.image)
       volumeMounts:
         - name: varlibcontainers
           mountPath: /var/lib/containers
         - name: image-secret
           mountPath: /tmp/authfile
-      securityContext:
-        privileged: true
   volumes:
     - name: varlibcontainers
       emptyDir: {}

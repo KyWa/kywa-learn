@@ -4,9 +4,12 @@ metadata:
   generateName: build-pipeline-
 spec:
   pipelineRef:
-    name: pipeline-build
+    name: build-pipeline
   workspaces:
-    - name: myworkspace
+    - name: ssh-creds
+      secret:
+        secretName: ssh-auth
+    - name: build
       volumeClaimTemplate:
         spec:
           accessModes:
