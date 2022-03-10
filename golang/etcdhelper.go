@@ -198,7 +198,7 @@ func getKey(client *clientv3.Client, key string) error {
 
 
 
-func secrets(encryptionSecret string, encryptionkey string, client *clientv3.Client, key string, ) error {
+func secrets(encryptionkey string, encryptionSecret string, client *clientv3.Client, key string) error {
 
 	if len(encryptionkey) == 0 || len(encryptionSecret) == 0 {
 		fmt.Fprint(os.Stderr, "ERROR: you need to specify an encryption key and secret\n")
