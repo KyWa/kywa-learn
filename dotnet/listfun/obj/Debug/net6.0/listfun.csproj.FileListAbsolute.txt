@@ -1,0 +1,15 @@
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/bin/Debug/net6.0/listfun
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/bin/Debug/net6.0/listfun.deps.json
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/bin/Debug/net6.0/listfun.runtimeconfig.json
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/bin/Debug/net6.0/listfun.dll
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/bin/Debug/net6.0/listfun.pdb
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.csproj.AssemblyReference.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.AssemblyInfoInputs.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.AssemblyInfo.cs
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.csproj.CoreCompileInputs.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.dll
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/refint/listfun.dll
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.pdb
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/listfun.genruntimeconfig.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/listfun/obj/Debug/net6.0/ref/listfun.dll

@@ -1,0 +1,15 @@
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/bin/Debug/net6.0/basic-console
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/bin/Debug/net6.0/basic-console.deps.json
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/bin/Debug/net6.0/basic-console.runtimeconfig.json
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/bin/Debug/net6.0/basic-console.dll
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/bin/Debug/net6.0/basic-console.pdb
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.csproj.AssemblyReference.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.AssemblyInfoInputs.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.AssemblyInfo.cs
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.csproj.CoreCompileInputs.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.dll
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/refint/basic-console.dll
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.pdb
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/basic-console.genruntimeconfig.cache
+/Users/kylewalker/Working/kywa/code-examples/dotnet/basic-console/obj/Debug/net6.0/ref/basic-console.dll
