@@ -5,5 +5,10 @@ import (
 )
 
 func main() {
-    fmt.Println("Herro")
+    fmt.Println(len("Hello, World"))
+    fmt.Println("Hello, World"[1])
+    fmt.Println("Hello, " + "World")
+
+    y := "reip"
+    fmt.Println("Oh no, its " + y)
 }
