@@ -1,0 +1,15 @@
+users:
+  bjon:
+    fname: mike
+    lname: jones
+  akill:
+    fname: andy
+    lname: killmonger
+custom_users:
+- bob
+- jill
+custom_groups:
+- operations
+- developers
+somevar: "true"
+snickers: "yes"

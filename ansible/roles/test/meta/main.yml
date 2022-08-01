@@ -1,0 +1,4 @@
+---
+dependencies:
+  - role: apache
+    port: 8080
