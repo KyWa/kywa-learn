@@ -1,4 +1,0 @@
----
-- name: Im a dependency role
-  debug:
-    msg: "yay, its a dependcye"

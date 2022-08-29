@@ -1,1 +1,3 @@
-# Learning Ansible fundamentals
+# Ansible Learnings
+
+Catchall for random role/task testing

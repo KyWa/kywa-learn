@@ -1,6 +1,0 @@
----
-- hosts: all
-  tasks:
-    - name: Import Role
-      import_role: 
-        name: users
