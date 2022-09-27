@@ -7,3 +7,4 @@
 * `dotnet new` - gives options for generating template files for a `.NET` application
 
 ## Package Manager
+* `nuget`
