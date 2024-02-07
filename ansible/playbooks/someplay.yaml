@@ -1,0 +1,5 @@
+---
+hosts: all
+gather_info: false
+pre_tasks:
+tasks:

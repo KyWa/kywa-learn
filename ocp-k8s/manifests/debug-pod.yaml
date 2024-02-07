@@ -1,0 +1,50 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-pod
+  labels:
+    app: debug-pod
+spec:
+#  nodeName: some-node
+#  tolerations:
+#  - effect: NoExecute
+#    key: node-role.kubernetes.io/master
+  containers:
+    - name: debug-pod
+      image: image-registry.openshift-image-registry.svc:5000/openshift/cli
+      imagePullPolicy: IfNotPresent
+#      env:
+#      - name: foo
+#        value: bar
+#      ports:
+#      - containerPort: 8080
+#        name: 8080-http
+#        protocol: TCP
+      command:
+      - /bin/sh
+      - '-c'
+      - '--'
+      args:
+      - 'while true; do sleep 30; done;'
+#      securityContext:
+#        privileged: true
+#        runAsUser: 0
+#      volumeMounts:
+#      - mountPath: /etc/pki/ca-trust/extracted/pem
+#        name: certbundle
+#        readOnly: true
+#      - name: volume-1
+#        mountPath: /pvchecker
+#  volumes:
+#  - configMap:
+#      defaultMode: 420
+#      items:
+#      - key: ca-bundle.crt
+#        path: tls-ca-bundle.pem
+#      name: cluster-cert-bundle
+#    name: certbundle
+#  volumes:
+#  - name: volume-1
+#    persistentVolumeClaim:
+#      claimName: some-pvc
