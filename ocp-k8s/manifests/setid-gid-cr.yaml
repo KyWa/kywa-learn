@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: system:openshift:scc:setid-setgid
+rules:
+- apiGroups:
+  - security.openshift.io
+  resourceNames:
+  - setuid-setgid
+  resources:
+  - securitycontextconstraints
+  verbs:
+  - use
