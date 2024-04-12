@@ -1,0 +1,76 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ceph-tools-debug
+spec:
+  progressDeadlineSeconds: 600
+  replicas: 1
+  revisionHistoryLimit: 10
+  selector:
+    matchLabels:
+      app: ceph-tools-debug
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: ceph-tools-debug
+    spec:
+      containers:
+      - args:
+        - -m
+        - -c
+        - /usr/local/bin/toolbox.sh
+        command:
+        - /bin/bash
+        env:
+        - name: ROOK_CEPH_USERNAME
+          valueFrom:
+            secretKeyRef:
+              key: ceph-username
+              name: rook-ceph-mon
+        - name: ROOK_CEPH_SECRET
+          valueFrom:
+            secretKeyRef:
+              key: ceph-secret
+              name: rook-ceph-mon
+        image: registry.redhat.io/odf4/rook-ceph-rhel9-operator@sha256:61d5cb8bf9da4fc8e7ac10d49bce03d065a3638625620a6616d49e12273f4459
+        imagePullPolicy: IfNotPresent
+        name: ceph-tools-debug
+        resources: {}
+        securityContext:
+          runAsGroup: 2016
+          runAsNonRoot: true
+          runAsUser: 2016
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        tty: true
+        volumeMounts:
+        - mountPath: /etc/ceph
+          name: ceph-config
+        - mountPath: /etc/rook
+          name: mon-endpoint-volume
+      dnsPolicy: ClusterFirstWithHostNet
+      restartPolicy: Always
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      tolerations:
+      - effect: NoSchedule
+        key: node.ocs.openshift.io/storage
+        operator: Equal
+        value: "true"
+      volumes:
+      - emptyDir: {}
+        name: ceph-config
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: data
+            path: mon-endpoints
+          name: rook-ceph-mon-endpoints
+        name: mon-endpoint-volume
