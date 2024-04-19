@@ -1,0 +1,35 @@
+---
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  labels:
+    app: index-builder
+    build: index-builder
+  name: index-builder
+spec:
+  failedBuildsHistoryLimit: 5
+  nodeSelector: {}
+  output:
+    pushSecret:
+      name: index-builder
+    to:
+      kind: DockerImage
+      name: quayserver.com/tools/index-builder:latest
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    type: dockerfile
+    dockerfile: |
+      FROM quay.io/operator-framework/opm:v1.39 AS opm-builder
+      FROM registry.redhat.io/odf4/rook-ceph-rhel9-operator@sha256:61d5cb8bf9da4fc8e7ac10d49bce03d065a3638625620a6616d49e12273f4459
+      COPY --from=opm-builder /bin/opm /usr/bin/opm
+      USER 1001
+      ENTRYPOINT ["/bin/bash"]
+      CMD ["--help"]
+  strategy:
+    dockerStrategy:
+    type: Docker
+  successfulBuildsHistoryLimit: 5
+  triggers:
+    - type: ConfigChange

@@ -1,0 +1,157 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: redhat-catalog
+  labels:
+    app: redhat-catalog
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      restartPolicy: Never
+      initContainers:
+        - name: render-index
+          image: quayserver.com/tools/index-builder
+          imagePullPolicy: Always
+          env:
+          - name: INDEX_LIST
+            valueFrom:
+              configMapKeyRef:
+                name: index-builders
+                key: redhat-list
+          - name: OC_VERSION
+            value: v4.14
+          - name: HOME
+            value: /catalog-automation
+          - name: INDEX
+            value: redhat
+          - name: PRUNED_INDEX_FILE
+            value: /catalog-automation/index-data/index.json
+          - name: TMP_INDEX
+            value: /tmp/tmp_index.json
+          args:
+          - '/catalog-automation/scripts/prune-index.sh'
+          volumeMounts:
+          - name: prune-index-script
+            mountPath: /catalog-automation/scripts/
+          - name: pull-secret
+            mountPath: /catalog-automation/.docker/
+          - name: index-data
+            mountPath: /catalog-automation/index-data/
+        - name: build-catalog
+          image: registry.redhat.io/rhel8/buildah:8.9
+          imagePullPolicy: Always
+          env:
+          - name: OC_VERSION
+            value: v4.14
+          - name: TLS_VERIFY
+            value: "false"
+          - name: HOME
+            value: /catalog-automation
+          - name: WORKDIR
+            value: /catalog-automation/scripts
+          - name: INDEX
+            value: redhat
+          - name: CATALOG_IMAGE
+            value: redhat-operator-index
+          - name: QUAY_SERVER
+            value: "quayserver.com"
+          - name: QUAY_REPOSITORY
+            value: "$(INDEX)-operators-pruned"
+          - name: PRUNED_CATALOG_IMAGE
+            value: "$(QUAY_SERVER)/$(QUAY_REPOSITORY)/$(CATALOG_IMAGE):$(OC_VERSION)"
+          command:
+          - /bin/bash
+          - '-c'
+          - '--'
+          args:
+          - '/catalog-automation/scripts/build-custom-catalog.sh'
+          securityContext:
+            privileged: true
+          volumeMounts:
+          - name: buildah-items
+            mountPath: /catalog-automation/scripts/
+          - name: quay-auth
+            mountPath: /catalog-automation/.docker/
+            readOnly: true
+          - name: index-data
+            mountPath: /catalog-automation/scripts/index-data/
+      containers:
+        - name: mirror-catalog
+          image: registry.redhat.io/openshift4/ose-tools-rhel8:v4.14
+          imagePullPolicy: Always
+          env:
+          - name: OC_VERSION
+            value: v4.14
+          - name: TLS_VERIFY
+            value: "false"
+          - name: HOME
+            value: /catalog-automation
+          - name: WORKDIR
+            value: /catalog-automation/scripts
+          - name: INDEX
+            value: redhat
+          - name: CATALOG_IMAGE
+            value: redhat-operator-index
+          - name: QUAY_SERVER
+            value: "quayserver.com"
+          - name: QUAY_REPOSITORY
+            value: "$(INDEX)-operators-pruned"
+          - name: PRUNED_CATALOG_IMAGE
+            value: "$(QUAY_SERVER)/$(QUAY_REPOSITORY)/$(CATALOG_IMAGE):$(OC_VERSION)"
+          command:
+          - /bin/bash
+          - '-c'
+          - '--'
+          args:
+          - '/catalog-automation/scripts/mirror-catalog.sh'
+          volumeMounts:
+          - name: mirror-script
+            mountPath: /catalog-automation/scripts/
+          - name: quay-auth
+            mountPath: /catalog-automation/.docker/
+            readOnly: true
+      serviceAccount: catalog-builder
+      serviceAccountName: catalog-builder
+      volumes:
+      - name: index-data
+        emptyDir: {}
+      - name: quay-auth
+        secret:
+          secretName: quay-index-repositories
+          items:
+          - key: ".dockerconfigjson"
+            path: config.json
+      - name: buildah-items
+        projected:
+          defaultMode: 0755
+          sources:
+          - configMap:
+              name: index-builders
+              items:
+              - key: build-custom-catalog
+                path: build-custom-catalog.sh
+              - key: custom-catalog-dockerfile
+                path: Dockerfile
+      - name: pull-secret
+        secret:
+          secretName: pull-secret
+          items:
+          - key: ".dockerconfigjson"
+            path: config.json
+      - name: prune-index-script
+        configMap:
+          defaultMode: 0755
+          items:
+          - key: prune-index
+            path: prune-index.sh
+          name: index-builders
+      - name: mirror-script
+        configMap:
+          defaultMode: 0755
+          items:
+          - key: mirror-catalog
+            path: mirror-catalog.sh
+          name: index-builders

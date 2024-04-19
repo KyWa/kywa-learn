@@ -1,0 +1,34 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: index-builders
+data:
+  custom-catalog-dockerfile: |
+    FROM quay.io/operator-framework/opm:latest
+    
+    LABEL operators.operatorframework.io.index.configs.v1=/configs
+    
+    ADD index-data/ /configs
+    RUN ["/bin/opm", "serve", "/configs", "--cache-dir=/tmp/cache", "--cache-only"]
+    
+    ENTRYPOINT ["/bin/opm"]
+    CMD ["serve", "/configs", "--cache-dir=/tmp/cache"]
+  build-custom-catalog: |
+    #!/bin/bash
+    cd $WORKDIR
+    buildah bud --tls-verify=$TLS_VERIFY --format=docker -f Dockerfile -t $PRUNED_CATALOG_IMAGE .
+    buildah push --tls-verify=$TLS_VERIFY $PRUNED_CATALOG_IMAGE
+  prune-index: |  
+    #!/bin/bash
+    opm render --skip-tls-verify registry.redhat.io/redhat/$INDEX-operator-index:$OC_VERSION > $TMP_INDEX
+    
+    for i in $INDEX_LIST;do    
+      cat $TMP_INDEX | jq --arg pkg $i 'select( .package == $ARGS.named.pkg or .name ==  $ARGS.named.pkg)' >> $PRUNED_INDEX_FILE
+    done
+  mirror-catalog: |
+    #!/bin/bash
+    oc adm catalog mirror $PRUNED_CATALOG_IMAGE $QUAY_SERVER/$QUAY_REPOSITORY --max-components=4 --insecure --index-filter-by-os='linux/amd64'
+  certified-list: "gitlab-operator-kubernetes"
+  community-list: "grafana-operator group-sync-operator group-sync-operator"
+  redhat-list: "loki-operator odf-operator multicluster-engine openshift-gitops-operator cluster-logging openshift-cert-manager-operator redhat-oadp-operator odf-csi-addons-operator ocs-operator mcg-operator rhacs-operator advanced-cluster-management"
