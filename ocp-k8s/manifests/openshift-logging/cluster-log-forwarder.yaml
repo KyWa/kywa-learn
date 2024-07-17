@@ -1,0 +1,48 @@
+---
+apiVersion: logging.openshift.io/v1
+kind: ClusterLogForwarder
+metadata:
+  name: instance
+  namespace: openshift-logging
+spec:
+  filters:
+  - name: trim-metadata-filters
+    type: prune 
+    prune: 
+      in: [.kubernetes.annotations, .kubernetes.labels, .kubernetes.namespace_labels, .kubernetes.namespace_id, .kubernetes.container_id, .kubernetes.container_image, .kubernetes.pod_id, .kubernetes.pod_owner, .kubernetes.pod_ip, .file]
+  outputs:
+   - name: fluentd-forwarder
+     type: fluentdForward 
+     syslog:
+       rfc: RFC5424
+     url: 'tcp://fluentd-forwarder.openshift-logging.svc:24224'
+   - name: rsyslog
+     type: syslog 
+     syslog:
+       addLogSource: true
+       facility: local1
+       rfc: RFC5424
+       msgID: YOUR_MSG_ID
+       procID: YOUR_PROC_ID
+       severity: informational
+     url: 'udp://YOUR_SYSLOG_SERVER:514'
+  pipelines:
+   - name: applications
+     inputRefs: 
+     - application
+     outputRefs: 
+     - fluentd-forwarder
+     filterRefs: ["trim-metadata-filters"]
+     labels:
+       cluster_name: "YOUR_CLUSTER_NAME"
+     parse: json
+   - name: audit-syslog
+     inputRefs: 
+     - audit
+     outputRefs: 
+     - rsyslog
+     filterRefs: ["trim-metadata-filters"]
+     labels:
+       secure: "true" 
+       cluster_name: "YOUR_CLUSTER_NAME"
+     parse: json
