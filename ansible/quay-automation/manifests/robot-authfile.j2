@@ -1,0 +1,14 @@
+{
+  "auths": {
+{% for object in org_robot_details.results %}
+{% if item in object.item %}
+    "{{ quay_server_hostname }}/{{ item }}": {
+      "username": "{{ object.name }}",
+      "password": "{{ object.token }}",
+      "auth": "{{ (object.name + ':' + object.token) | b64encode }}",
+      "email": ""
+    }
+{% endif %}
+{% endfor %}
+  }
+}

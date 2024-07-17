@@ -1,0 +1,104 @@
+---
+- name: Bootstrapping a fresh Quay Container Registry installation
+  hosts: localhost
+  vars_prompt: # These could also be vars passed in from somewhere else
+  - name: username
+    prompt: "What is your LDAP Account Username?"
+    private: false
+  - name: password
+    prompt: "What is your LDAP Account Password?"
+    private: true
+  vars_files:
+    - vars/quay-sensitve.yml
+    - vars/quay-generic.yml
+
+  module_defaults:
+    group/herve4m.quay.quay:
+      validate_certs: false
+      quay_host: "your-quay-host.example.com"
+      quay_username: "{{ username }}"
+      quay_password: "{{ password }}"
+
+  pre_tasks:
+  # Generate needed configs and objects
+  - name: SETUP | Generate Config Bundle Secret
+    template:
+      dest: manifests/config.yaml
+      src: manifests/config.yaml.j2
+
+  - name: SETUP | Generate QuayRegistry object
+    template:
+      dest: manifests/quayregistry.yaml
+      src: manifests/quayregistry.yaml.j2
+
+  # Creating the new QuayRegistry
+  - name: SETUP | Create Config Bundle Secret
+    shell: "oc create -n {{ quay_namespace }} secret generic --from-file config.yaml=manifests/config.yaml config-bundle-secret"
+
+  - name: SETUP | Create QuayRegistry Object
+    shell: "oc create -n {{ quay_namespace }} -f manifests/quayregistry.yaml"
+
+  # Setup a WAIT for this as it can take a few minutes
+  - name: SETUP | Wait for QuayRegistry to become healthy
+    shell: oc get quayregistry -n {{ quay_namespace }} {{ quay_registry_name }} -o json | jq -r '.status.conditions[]? | select(.type == "Available") | .status'
+    register: quay_registry_status
+    delay: 60
+    retries: 10
+    until: quay_registry_status.stdout_lines == ["True"]
+
+  tasks:
+  # Create Organization
+  - name: ORGS | Ensure the organizations exists
+    herve4m.quay.quay_organization:
+      name: "{{ item }}"
+      state: present
+      email: "{{ item }}@example.com "
+    loop: "{{ your_quay_organizations }}"
+
+  # Create Robot Accounts
+  - name: ORG ROBOTS | Ensure the Org robot accounts exist
+    herve4m.quay.quay_robot:
+      name: "{{ item }}+{{ item }}_bot"
+      description: "Robot account for {{ item }}"
+      state: present
+    register: org_robot_details
+    loop: "{{ your_quay_organizations }}"
+
+  # Set Robot Permissions
+  - name: ORG TEAMS | Set robot account team membership
+    herve4m.quay.quay_team:
+      name: robots
+      organization: "{{ item.item }}"
+      role: admin
+      members:
+        - "{{ item.name }}"
+      append: false
+      state: present
+    loop: "{{ org_robot_details.results }}"
+
+  # Set Team LDAP Permissions
+  - name: LDAP SYNC | Setup team LDAP Sync
+    herve4m.quay.quay_team_ldap:
+      name: owners
+      organization: "{{ item }}"
+      sync: true
+      group_dn: "{{ ldap_group_dn }}"
+    loop: "{{ your_quay_organizations }}"
+
+  # Generate image pullsecrets 
+  - name: IMAGE PULLSECRET | Generate temporary dockercfg manifest
+    template:
+      src: manifests/robot-authfile.j2
+      dest: "manifests/{{ item }}-robot-authfile-dockercfg"
+    loop: "{{ your_quay_organizations }}"
+
+  - name: IMAGE PULLSECRET | Generate temporary Secret dockercfg manifest 
+    shell: "oc create secret docker-registry {{ item }} --from-file .dockerconfigjson=manifests/{{ item }}-robot-authfile-dockercfg --dry-run=client -o yaml"
+    register: quay-org-authsecret
+    loop: "{{ your_quay_organizations }}"
+
+  - name: IMAGE PULLSECRET | Create Org Secret auth manifest
+    copy:
+      content: "{{ item.stdout }}"
+      dest: "manifests/{{ item.item }}-org-robot-secret.yaml"
+    loop: "{{ quay-org-authsecret.results }}"

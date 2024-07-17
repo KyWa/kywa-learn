@@ -1,0 +1,18 @@
+cleanup_existing: False
+
+your_quay_organizations:
+  - app-team-a
+  - app-team-b
+
+ldap_uri: 'ldaps://your-secure-ldap-server.example.com:636'
+ldap_admin_dn: 'CN=LDAP-BIND,OU=USERS,OU=SUBDOMAIN,DC=EXAMPLE,DC=com'
+ldap_group_dn: 'CN=your-group-name,OU=GROUPS,OU=SUBDOMAIN'
+
+quay_registry_name: 'your-quay-registry' # The CRD QuayRegistry name in OpenShift
+quay_namespace: 'openshift-operators'
+
+quay_server_hostname: 'your-quay-server.example.com'
+
+quay_superusers:
+  - you
+  - me
