@@ -1,5 +1,10 @@
 # Quay API Automation
 
+## Setup
+```sh
+ansible-galaxy install -r requirements.yml
+```
+
 ## Requirements
 1. Logged into the OpenShift Cluster where you are to install Quay
 2. An active LDAP account to pass into the playbook for setting up Quay's LDAP
