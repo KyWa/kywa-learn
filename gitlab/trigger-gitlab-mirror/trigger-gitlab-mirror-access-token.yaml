@@ -1,0 +1,7 @@
+apiVersion: v1
+stringData:
+  GITLAB_ACCESS_TOKEN: GITLAB_TOKEN_HERE
+kind: Secret
+metadata:
+  name: gitlab-access-token-secret
+type: Opaque

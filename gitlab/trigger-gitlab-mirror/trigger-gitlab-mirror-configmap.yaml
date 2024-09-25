@@ -1,0 +1,55 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: trigger-gitlab-mirror-script
+data:
+  trigger-mirror.py: |
+    import os
+    import requests
+    import json
+
+    # Function to check environment variables
+    def check_env_var(env_var_name):
+        if env_var_name not in os.environ or os.environ[env_var_name] == "":
+            print(f"Error: Environment variable {env_var_name} is not set.", file=sys.stderr)
+            sys.exit(1)
+        else:
+            return os.environ[env_var_name]
+
+    # Check and get GITLAB_BASE_URL environment variable
+    gitlab_base_url = check_env_var("GITLAB_BASE_URL")
+    print(f"Environment variable GITLAB_BASE_URL is set to '{gitlab_base_url}'.")
+
+    # Check and get GITLAB_ACCESS_TOKEN environment variable
+    gitlab_access_token = check_env_var("GITLAB_ACCESS_TOKEN")
+
+    # Define the projects URL
+    projects_url = f"{gitlab_base_url}/api/v4/projects"
+
+    # Make the request and store the response
+    print(f"Making request to {projects_url}")
+    response = requests.get(projects_url, headers={"Authorization": f"Bearer {gitlab_access_token}"})
+
+    if response.status_code == 200:
+        projects = response.json()
+        if projects:
+            for project in projects:
+                id = project["id"]
+                name_with_namespace = project["name_with_namespace"]
+                mirror = project.get("mirror", False)
+                
+                print(f"ID: {id}, Name with Namespace: {name_with_namespace}, Mirror: {mirror}")
+                
+                if mirror:
+                    print("Mirrored: Yes")
+                    mirror_url = f"{gitlab_base_url}/api/v4/projects/{id}/mirror/pull"
+                    print(f"Posting Mirror to {mirror_url}")
+                    mirror_response = requests.post(mirror_url, headers={"Authorization": f"Bearer {gitlab_access_token}"})
+                    print(f"Mirror response: {mirror_response.json()}")
+                else:
+                    print("Mirrored: No")
+        else:
+            print("The response is an empty JSON list or request failed.")
+    else:
+        print("Failed to fetch projects:", response.text)
+

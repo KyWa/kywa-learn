@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  name: YXJnby1hcHBz
+  sshPrivateKey: REPLACE_SSH
+  type: Z2l0
+  url: REPLACE_URL
+kind: Secret
+metadata:
+  annotations:
+    managed-by: argocd.argoproj.io
+  labels:
+    argocd.argoproj.io/secret-type: repository
+  name: repo-skeleton
+  namespace: argocd
+type: Opaque

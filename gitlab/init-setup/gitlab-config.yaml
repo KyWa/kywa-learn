@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: gitlab-config
+stringData:
+  gitlab.config: |
+    {
+      "users": [
+          {
+              "username": "cooluser",
+              "password": "CHANGEME",
+              "email": "user@example.com",
+              "name": "Cool User Number Five"
+          }
+      ],
+      "groups": [
+          {
+              "name": "openshift",
+              "projects": [
+                  {
+                      "name": "Cool Repository",
+                      "path": "cool-repo",
+                      "mirror": {
+                          "source": "https://github.com/Org/cool-repo.git",
+                          "branches": "main"
+                      }
+                  }
+              ]
+          }
+      ]
+    }

@@ -1,0 +1,43 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: trigger-gitlab-mirror-cronjob
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: trigger-mirror
+            image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:8af0a4afdd1d4b263f8365a765bbab04fe8b271710a52b394b285dd29497143a
+            command: ["/bin/python", "/scripts/trigger-mirror.py"]
+            env:
+            - name: GITLAB_BASE_URL
+              value: "https://gitlab.example.com"
+            - name: GITLAB_ACCESS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: gitlab-access-token-secret
+                  key: GITLAB_ACCESS_TOKEN
+            - name: REQUESTS_CA_BUNDLE
+              value: /etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem
+            volumeMounts:
+            - name: script-volume
+              mountPath: /scripts
+            - name: certbundle
+              mountPath: /etc/pki/ca-trust/extracted/pem
+              readOnly: true
+          volumes:
+          - name: script-volume
+            configMap:
+              name: trigger-gitlab-mirror-script
+          - configMap:
+              defaultMode: 420
+              items:
+              - key: ca.crt
+                path: tls-ca-bundle.pem
+              name: kube-root-ca.crt
+            name: certbundle
+          restartPolicy: OnFailure

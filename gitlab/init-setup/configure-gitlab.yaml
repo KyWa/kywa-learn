@@ -1,0 +1,267 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: installer
+data:
+  configure_gitlab.py: |
+    #!/usr/bin/env python
+    
+    import os
+    import json
+    import requests
+    import sys
+    import argparse
+    from urllib import parse
+    import re
+    
+    if os.environ["GITLAB_CONFIG_FILE"] is None:
+        GITLAB_CONFIG_FILE = os.environ["CONFIG_FILE"]
+    else:
+        GITLAB_CONFIG_FILE = "/app/config/gitlab.config"
+    
+    with open(GITLAB_CONFIG_FILE,"r") as file:
+        GITLAB_CONFIG = json.load(file)
+    
+    # References https://docs.gitlab.com/ee/api/access_requests.html#valid-access-levels
+    GITLAB_ACCESS_LEVELS = {
+        "none": 0,
+        "minimal": 5,
+        "guest": 10,
+        "reporter": 20,
+        "developer": 30,
+        "maintainer": 40,
+        "owner": 50
+    }
+    
+    # Fill in GitHub Token
+    GITLAB_LICENSE_ENTERPRISE = "enterprise"
+    ### https://github.com/vitalyisaev2/gitlab_token/blob/main/personal_access_token.py
+    GITLAB_API_TOKEN = open("/gitlab/.temp_token", "r").read()
+    GITLAB_SERVER_NAME = 'GITLAB_SERVER'
+    GITLAB_DEBUG_NAME = 'GITLAB_DEBUG'
+    GITLAB_LICENSE_NAME = 'GITLAB_LICENSE'
+    ### Get serviceaccount for ADO #TODO
+    GITLAB_MIRROR_USERNAME_NAME = 'GITLAB_MIRROR_USERNAME'
+    GITLAB_MIRROR_PASSWORD_NAME = 'GITLAB_MIRROR_PASSWORD'
+    
+    
+    parser = argparse.ArgumentParser(description='Gather GitLab Statistics.')
+    parser.add_argument("-l", "--license", help="License File", default=os.environ.get(GITLAB_LICENSE_NAME))
+    parser.add_argument("-s", "--server", help="GitLab Server", default=os.environ.get(GITLAB_SERVER_NAME))
+    parser.add_argument("-d", "--debug", help="Enable Debug Mode", default=os.environ.get(GITLAB_DEBUG_NAME))
+    parser.add_argument("-mu", "--mirror-username", help="Username for Pull Mirroring", default=os.environ.get(GITLAB_MIRROR_USERNAME_NAME))
+    parser.add_argument("-mp", "--mirror-password", help="Password for Pull Mirroring", default=os.environ.get(GITLAB_MIRROR_PASSWORD_NAME))
+
+    args = parser.parse_args()
+    
+    gitlab_server = args.server
+    gitlab_api_token = GITLAB_API_TOKEN
+    gitlab_license = args.license
+    gitlab_mirror_username = args.mirror_username
+    gitlab_mirror_password = args.mirror_password
+    is_debug = args.debug
+    
+    # Verification
+    if gitlab_server is None:
+        print("ERROR: GitLab Server Host Not Specified")
+        os.exit(1)
+    
+    if gitlab_api_token is None:
+        print("ERROR: GitLab API Token Not Specified")
+        os.exit(1)
+    
+    session = requests.Session()
+    session.headers = {
+        'Private-Token': gitlab_api_token
+    }
+    
+    def handle_pagination_items(session, url):
+        if is_debug:
+            print("DEBUG:: handle_pagination_items(): url = {0}".format(url))
+        pagination_request = session.get(url, verify=False)
+        pagination_request.raise_for_status()
+    
+        if 'link' in pagination_request.headers and 'next' in pagination_request.headers["Link"] and pagination_request.links['next']:
+            return pagination_request.json() + handle_pagination_items(session, pagination_request.links['next']['url'])
+        else:
+            return pagination_request.json()
+    
+    
+    
+    def get_license(session, server):
+        license_request = session.get("{0}/api/v4/license".format(server), verify=False)
+        license_request.raise_for_status
+        
+        return license_request.json()
+    
+    def add_license(session, server, license):
+        license_response = session.post("{0}/api/v4/license?license={1}".format(server, parse.quote(license, safe='')), verify=False)
+    
+        if is_debug:
+            print("DEBUG:: License Creation Data")
+            print("  {0}".format(json.dumps(license_response.json(), indent=4, sort_keys=True)))
+        
+        return license_response.json()
+    
+    def create_user(session, server, user):
+        new_user = session.post("{0}/api/v4/users".format(server),
+            data={
+                "username": user["username"],
+                "password": user["password"],
+                "email": user["email"],
+                "name": user["name"]
+            }, verify=False)
+    
+        if is_debug:
+            print("DEBUG:: User Creation Data")
+            print("  {0}".format(json.dumps(new_user.json(), indent=4, sort_keys=True)))
+        
+        return new_user.json()
+    
+    def create_project(session, server, project, group):
+    
+        new_project = session.post("{0}/api/v4/projects".format(server),
+                            data={
+                                "namespace_id": group["id"],
+                                "name": project["name"],
+                                "path": project["path"]
+                            }, verify=False)
+    
+        if is_debug:
+            print("DEBUG:: Create Project Data")
+            print("  {0}".format(json.dumps(new_project.json(), indent=4, sort_keys=True)))
+        
+        return new_project.json()
+    
+    def add_pull_mirroring(session, server, project_request, project_id, mirror_username, mirror_password):
+    
+        parsed_mirror = parse.urlparse(project_request["mirror"]["source"])
+    
+        mirror_params = {
+            "mirror": True,
+            "import_url": parsed_mirror._replace(netloc="{0}:{1}@{2}".format(parse.quote(mirror_username, safe=''), parse.quote(mirror_password, safe=''), parsed_mirror.netloc)).geturl()
+        }
+    
+        if "branches" in project_request["mirror"]:
+            mirror_params["mirror_branch_regex"] = project_request["mirror"]["branches"]
+    
+        add_mirror = session.put("{0}/api/v4/projects/{1}".format(server, project_id), data=mirror_params, headers={"Content-Type": "application/x-www-form-urlencoded"}, verify=False)
+    
+        if is_debug:
+            print("DEBUG:: Add Mirror to Project")
+            print("  {0}".format(json.dumps(add_mirror.json(), indent=4, sort_keys=True)))
+    
+    def create_group(session, server, group):
+        new_group = session.post("{0}/api/v4/groups".format(server),
+                            data={
+                                "name": group["name"],
+                                "path": group["name"].lower(),
+                            }, verify=False)
+    
+        if is_debug:
+            print("DEBUG:: Group Creation Data")
+            print("  {0}".format(json.dumps(new_group.json(), indent=4, sort_keys=True)))
+        
+        return new_group.json()
+    
+    def get_users(session, server):
+        users = handle_pagination_items(session, "{0}/api/v4/users".format(server))
+    
+        return users
+    
+    def get_groups(session, server):
+        groups = handle_pagination_items(session, "{0}/api/v4/groups".format(server))
+    
+        return groups
+    
+    def get_projects_for_group(session, server, group):
+        group_projects = handle_pagination_items(session, "{0}/api/v4/groups/{1}/projects".format(server, group["id"]))
+    
+        return group_projects
+    
+    
+    def get_group_members(session, server, group):
+        group_members = handle_pagination_items(session, "{0}/api/v4/groups/{1}/members".format(server, group["id"]))
+    
+        return group_members
+    
+    def add_member_to_group(session, server, group, user, role):
+    
+        new_permission = session.post("{0}/api/v4/groups/{1}/members".format(server, group["id"]),
+                            data={
+                                "id": group["id"],
+                                "user_id": user["id"],
+                                "access_level": GITLAB_ACCESS_LEVELS[role.lower()],
+                            }, verify=False)
+    
+        if is_debug:
+            print("DEBUG:: Add Member to Group Data")
+            print("  {0}".format(json.dumps(new_permission.json(), indent=4, sort_keys=True)))
+    
+    
+    def get_user(session, server, user_name):
+        user = session.get("{0}/api/v4/users?username={1}".format(server, parse.quote(user_name, safe='')), verify=False)
+        result = user.json()
+    
+        if is_debug:
+            print("DEBUG:: User Data")
+            print("  {0}".format(json.dumps(result, indent=4, sort_keys=True)))
+    
+        return result[0] if len(result) > 0 else None
+    
+    def extract_item(items, field_name, match):
+        extracted_items = [d for d in items if d[field_name] == match]
+    
+        return extracted_items[0] if len(extracted_items) == 1 else None
+    
+    # Manage License
+    if gitlab_license is not None:
+        current_license = get_license(session, gitlab_server)
+    
+        if current_license is None:
+            add_license(session, gitlab_server, gitlab_license)
+    
+    # List current users
+    users = get_users(session, gitlab_server)
+    
+    if "users" in GITLAB_CONFIG:
+        for u in GITLAB_CONFIG["users"]:
+    
+            if extract_item(users, "username", u["username"]) is None:
+                users.append(create_user(session, gitlab_server, u))
+    
+    # List groups
+    if "groups" in GITLAB_CONFIG:
+    
+        groups = get_groups(session, gitlab_server)
+    
+        for g in GITLAB_CONFIG["groups"]:
+            group = extract_item(groups, "name", g["name"])
+            if group == None:
+                group = create_group(session, gitlab_server, g)
+            
+            # Associate Members
+            if "permissions" in g:
+    
+                # Load Permissions for Group
+                group_members = get_group_members(session, gitlab_server, group)
+    
+                for group_member in g["permissions"]:
+    
+                    if extract_item(group_members, "username", group_member["name"]) is None:
+                        add_member_to_group(session, gitlab_server, group, extract_item(users, "username", group_member["name"]), group_member["role"])
+            
+            if "projects" in g:
+                group_projects = get_projects_for_group(session, gitlab_server, group)
+    
+                for project in g["projects"]:
+    
+                     if extract_item(group_projects, "path", project["path"]) is None:
+
+                         # Create Project
+                         new_project = create_project(session, gitlab_server, project, group)
+                         
+                         if gitlab_license is not None and gitlab_mirror_username is not None and gitlab_mirror_password is not None and "mirror" in project:
+                            
+                            # Enable Mirroring
+                            add_pull_mirroring(session, gitlab_server, project, new_project["id"], gitlab_mirror_username, gitlab_mirror_password)

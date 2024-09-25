@@ -1,0 +1,103 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: gitlab-install-configure
+spec:
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      initContainers:
+      - command:
+        - python3
+        - /app/get_token.py
+        args:
+        - gitlab-mirror-token
+        - "2025-03-20"
+        env:
+        - name: GITLAB_SERVER
+          value: "https://gitlab.example.com"
+        - name: GITLAB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: gitlab-gitlab-initial-root-password
+              key: password
+        image: quay.io/kywa/py-env:latest # Custom Python image was needed for libraries
+        imagePullPolicy: IfNotPresent
+        name: gitlab-token
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /gitlab/
+          name: temp-token
+        - mountPath: /app/
+          name: get-token
+      containers:
+      - command:
+        - python
+        - /app/scripts/configure_gitlab.py
+        env:
+        - name: GITLAB_CONFIG_FILE
+          value: "/app/config/gitlab.config"
+        - name: GITLAB_SERVER
+          value: "https://gitlab.example.com"
+        - name: GITLAB_LICENSE
+          valueFrom:
+            secretKeyRef:
+              name: gitlab-license
+              key: gitlab.license
+        - name: GITLAB_MIRROR_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: gitlab-mirror
+              key: git-username
+        - name: GITLAB_MIRROR_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: gitlab-mirror
+              key: git-password
+        - name: REQUESTS_CA_BUNDLE
+          value: "/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem"
+        image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:8af0a4afdd1d4b263f8365a765bbab04fe8b271710a52b394b285dd29497143a
+        imagePullPolicy: IfNotPresent
+        name: gitlab-setup
+        resources: {}
+        terminationMessagePath: /dev/termination-log
+        terminationMessagePolicy: File
+        volumeMounts:
+        - mountPath: /gitlab/
+          name: temp-token
+        - mountPath: /app/config/
+          name: gitlab-config
+        - mountPath: /app/scripts/
+          name: installer-script
+        - mountPath: /etc/pki/ca-trust/extracted/pem
+          name: certbundle
+          readOnly: true
+      dnsPolicy: ClusterFirst
+      restartPolicy: OnFailure
+      schedulerName: default-scheduler
+      securityContext: {}
+      terminationGracePeriodSeconds: 30
+      volumes:
+      - name: temp-token
+        emptyDir: {}
+      - name: installer-script
+        configMap:
+          name: installer
+      - name: get-token
+        configMap:
+          name: gitlab-get-token
+      - name: gitlab-config
+        secret:
+          defaultMode: 420
+          secretName: gitlab-config
+      - configMap:
+          defaultMode: 420
+          items:
+          - key: ca.crt
+            path: tls-ca-bundle.pem
+          name: kube-root-ca.crt
+        name: certbundle
