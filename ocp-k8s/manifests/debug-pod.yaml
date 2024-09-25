@@ -8,8 +8,8 @@ metadata:
 spec:
 #  nodeName: some-node
 #  tolerations:
-#  - effect: NoExecute
-#    key: node-role.kubernetes.io/master
+#  - operator: Exists 
+#  hostNetwork: true
   containers:
     - name: debug-pod
       image: image-registry.openshift-image-registry.svc:5000/openshift/cli
@@ -47,4 +47,4 @@ spec:
 #  volumes:
 #  - name: volume-1
 #    persistentVolumeClaim:
-#      claimName: some-pvc
+#      claimName: SOME_PVC
