@@ -1,0 +1,30 @@
+global:
+  resolve_timeout: 5m
+  smtp_from: some-alerting-user@example.com
+  smtp_smarthost: 'smtprelay.example.com:25'
+  smtp_require_tls: false
+receivers:
+- name: Critical
+  email_configs:
+  - to: >-
+      some-email-group@example.com
+    hello: smtprelay.example.com
+    send_resolved: true
+- name: Default
+route:
+  group_by:
+  - namespace
+  group_interval: 5m
+  group_wait: 30s
+  receiver: Default
+  repeat_interval: 12h
+  routes:
+  - receiver: Critical
+    matchers:
+      - namespace="some-namespace"
+      - alertname!="PersistentVolumeUsageNearFull|PodDisruptionBudgetAtLimit" 
+      - cluster!="some-cluster-name"
+    continue: false
+  - receiver: Critical
+    matchers:
+      - severity=~"warning|critical"
