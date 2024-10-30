@@ -1,0 +1,32 @@
+# For disconnected environments that need to specify a mirrored container registry and because this is a Helm chart, you need to specify the images like so with the actual hash of the digest on the "tag" line
+---
+apiVersion: operator.external-secrets.io/v1alpha1
+kind: OperatorConfig
+metadata:
+  name: cluster
+  namespace: external-secrets-operator
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  image:
+    repository: container-registry.example.com/community-operators/external-secrets@sha256
+    tag: 3c822882f8b598da8484c81e1573bd55f0b8756eea1705a165a18a9b622db477
+  certController:
+    create: true
+    image: container-registry.example.com/community-operators/external-secrets@sha256
+      repository: 
+      tag: 3c822882f8b598da8484c81e1573bd55f0b8756eea1705a165a18a9b622db477
+  webhook:
+    create: true
+    image: container-registry.example.com/community-operators/external-secrets@sha256
+      repository: 
+      tag: 3c822882f8b598da8484c81e1573bd55f0b8756eea1705a165a18a9b622db477
+  prometheus:
+    enabled: false
+  resources:
+    requests:
+      cpu: "50m"
+      memory: "128Mi"
+    limits:
+      cpu: "1"
+      memory: "1Gi"

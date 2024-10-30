@@ -1,0 +1,22 @@
+---
+apiVersion: operator.external-secrets.io/v1alpha1
+kind: OperatorConfig
+metadata:
+  name: cluster
+  namespace: external-secrets-operator
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+spec:
+  certController:
+    create: true
+  webhook:
+    create: true
+  prometheus:
+    enabled: false
+  resources:
+    requests:
+      cpu: "50m"
+      memory: "128Mi"
+    limits:
+      cpu: "1"
+      memory: "1Gi"
