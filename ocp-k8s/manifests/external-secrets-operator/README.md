@@ -9,6 +9,12 @@ The `external-secrets-operator` can be installed via OLM in your OpenShift clust
 oc patch csv external-secrets-operator.v0.9.17 --type json -p='[{"op": "replace", "path": "/spec/install/spec/deployments/0/spec/template/spec/containers/0/image", "value":"container-registry.example.com/community-operators/external-secrets@sha2563c822882f8b598da8484c81e1573bd55f0b8756eea1705a165a18a9b622db477"}]'
 ```
 
+For versions of ESO newer than v0.10.3, the container registry used to house images has changed from `ghcr.io` to `oci.external-secrets.io/external-secrets/external-secrets`. Example:
+```sh
+oci.external-secrets.io/external-secrets/external-secrets@sha256:7bb4519185f6e4bba1a2f1a9bcfa9fb0e20dc7c5935d2dd462d3f8624a90dbf9
+```
+
+## Helpful Extras
 There is also a small BASH script here called `helper-scripts.sh` which has 2 functions that can help format certificates for use with ESO (and a secret vault).
 
 ## Connecting to a SecretStore
