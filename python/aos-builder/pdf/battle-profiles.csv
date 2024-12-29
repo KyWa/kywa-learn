@@ -1,0 +1,768 @@
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZ,
+Alchemite Warforger,1,110,Any Human Infantry,,32mm,
+✹  Assassin,1,90 (-30),None,"This Hero can join an eligibleregiment as a Shadow Agent.",25mm,
+✹  Battlemage,1,100 (-10),Any Human Infantry,,25mm,
+"Battlemage onCelestial Hurricanum",1,240,"Any Human Infantry,Any Human Cavalry",,120 × 92m,
+Battlemage on Griffon,1,280,Any Human,,120 × 92m,
+Battlemage on Luminark of Hysh,1,280,"Any Human Infantry,Any Human Cavalry",,120 × 92m,
+Black Ark Fleetmaster,1,110,Any Aelf,"This Hero can join an eligibleregiment as a Shadow Agent.",25mm,
+Callis and Toll,2,230,"Toll’s Companions (required),Any Human Infantry",This unit cannot be reinforced.,28.5mm,
+✹ Cogsmith,1,120 (-10),Any Duardin,"This Hero can join aWarden King’s regiment.",25mm,
+Dreadlord on Black Dragon,1,270,"0-1 Shadow Agent, Any Aelf",,105 × 70m,
+✹ F reeguild Cavalier-Marshal,1,150 (-20),"0-1 Freeguild Veteran, Any Human","This Hero can join an eligibleregiment as a Freeguild Veteran.",75 × 42mm,
+"✹  Freeguild Marshal andRelic Envoy",1,110 (-20),"0-1 Freeguild Veteran, Any Human","This Hero can join an eligibleregiment as a Freeguild Veteran.","32mm [1],28.5mm [1]",
+Freeguild Marshal on Griffon,1,280,"0-1 Freeguild Veteran, Any Human",,120 × 92m,
+Fusil-Major on Ogor Warhulk,1,180,Any Human,"This Hero can join an eligibleregiment as a Freeguild Veteran.",50mm,
+✹  Galen ven Denst,1,170 (-40),"Doralia ven Denst (required),Any Human Infantry",,28.5mm,
+Doralia ven Denst,1,0,None,"This unit can only be taken inGalen ven Denst’s regiment.",28.5mm,
+"✹  Pontifex Zenestra, Matriarch ofthe Great Wheel",1,200 (-40),"Any Human Infantry,Any Human Cavalry",,90 × 52mm,
+Runelord,1,120,Any Duardin,,25mm,
+Sorceress,1,120,"0-1 Shadow Agent, Any Aelf",,25mm,
+Sorceress on Black Dragon,1,280,"0-1 Shadow Agent, Any Aelf",,105 × 70m,
+✹ S team Tank Commander,1,280 (-30),Any Steam Tank,"This Hero can join an eligibleregiment as a Freeguild Veteran.",120 × 92m,
+"Tahlia Vedra, Lioness of the Parch",1,310,"0-1 Freeguild Veteran, Any Human",,100mm,
+✹ Warden King,1,130 (-20),"0-1 Cogsmith, Any Duardin",,25mm,
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Black Ark Corsairs,10,120,"Aelf, Infantry",,25mm
+Black Guard,10,130,"Aelf, Infantry",,25mm
+Bleakswords,10,100,"Aelf, Infantry",,25mm
+Celestial Hurricanum,1,180,"Human, War Machine",,120 × 92mm
+Dark Riders,5,150,"Aelf, Cavalry",,60 × 35mm
+Darkshards,10,140,"Aelf, Infantry",,25mm
+Drakespawn Chariot,1,120,"Aelf, War Machine",,120 × 92mm
+Drakespawn Knights,5,180,"Aelf, Cavalry",,60 × 35mm
+Dreadspears,10,110,"Aelf, Infantry",,25mm
+✹ Executioners,10,150 (+10),"Aelf, Infantry",,25mm
+Flagellants,10,90,"Human, Infantry",,25mm
+✹ F reeguild Cavaliers,5,160 (-10),"Human, Cavalry",,60 × 35mm
+✹ F reeguild Command Corps,6,160 (-30),"Human, Infantry",This unit cannot be reinforced.,"40mm [1],32mm [1],28.5mm [4]"
+Freeguild Fusiliers,10,120,"Human, Infantry",,28.5mm
+✹ F reeguild Steelhelms,10,90 (-10),"Human, Infantry",,25mm
+✹  Gyrobomber,1,140 (-20),"Duardin, War Machine",,50mm
+Gyrocopter,1,140,"Duardin, War Machine",,50mm
+✹ Hammerers,10,160 (+10),"Duardin, Infantry",,25mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹  Ironbreakers,10,140 (+10),"Duardin, Infantry",,25mm
+✹  Irondrakes,10,140 (-10),"Duardin, Infantry",,25mm
+✹  Ironweld Great Cannon,1,110 (-20),"Human, War Machine",,90mm
+Kharibdyss,1,140,"Aelf, Monster",,120 × 92mm
+✹  Longbeards,10,110 (-10),"Duardin, Infantry",,25mm
+Luminark of Hysh,1,230,"Human, War Machine",,120 × 92mm
+Scourgerunner Chariot,1,120,"Aelf, War Machine",,120 × 92mm
+✹  Steam Tank,1,260 (-30),"Human, War Machine",,120 × 92mm
+Toll’s Companions,4,0,"Unique, Human, Infantry","This unit can only be taken inCallis and Toll’s regiment.This unit cannot be reinforced.","40mm [1],28.5mm [3]"
+✹ War Hydra,1,160 (-40),"Aelf, Monster",,120 × 92mm
+✹  Wildercorps Hunters,11,120 (-10),"Human, Infantry",This unit cannot be reinforced.,"40mm [2],28.5mm [3],25mm [6]"
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹  Bloodwrack Medusa,1,160 (-20),"0-1 Avatar of Khaine,Any Khinerai, Any Melusai",,40mm
+✹  Bloodwrack Shrine,1,200 (-20),"0-1 Avatar of Khaine,Any Khinerai, Any Melusai",,120 × 92mm
+Hag Queen,1,140,"0-1 Coven Matriarch,0-1 Avatar of Khaine, Any Aelf",,25mm
+Hag Queen on Cauldron of Blood,1,350,"0-1 Coven Matriarch, Any Aelf",,120 × 92mm
+✹  High Gladiatrix,1,100 (-30),"0-1 Avatar of Khaine, Any Aelf","This Hero can join an eligibleregiment as a Coven Matriarch.",32mm
+✹  Krethusa the Croneseer,1,150 (-20),"0-1 Coven Matriarch, Any Aelf",,60mm
+✹ Melusai Ironscale,1,160,"0-1 Avatar of Khaine,Any Khinerai, Any Melusai","This Hero can join an eligibleregiment as a Coven Matriarch.",40mm
+Morathi-Khaine,1,760,"The Shadow Queen (required),0-1 Coven Matriarch,Any Daughters of Khaine",,40mm
+The Shadow Queen,1,0,None,"This unit can only be taken inMorathi-Khaine’s regiment.",100mm
+✹ S laughter Queen,1,130 (-20),"0-1 Coven Matriarch,0-1 Avatar of Khaine, Any Aelf",,25mm
+"✹  Slaughter Queen onCauldron of Blood",1,320 (-30),"0-1 Coven Matriarch, Any Aelf",,120 × 92mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹ Avatar of Khaine,1,140 (-20),Monster,,40mm
+Blood Sisters,5,140,"Melusai, Infantry",,40mm
+Blood Stalkers,5,140,"Melusai, Infantry",,40mm
+Doomfire Warlocks,5,150,"Aelf, Cavalry",,60 × 35mm
+Khainite Shadowstalkers,9,110,"Aelf, Infantry",This unit cannot be reinforced.,"40mm [1],28.5mm [8]"
+✹ Khinerai Heartrenders,5,100 (-10),"Khinerai, Infantry",,40mm
+✹  Khinerai Lifetakers,5,80 (-10),"Khinerai, Infantry",,40mm
+"Sisters of Slaughter withBladed Bucklers",10,110,"Aelf, Infantry",,25mm
+"Sisters of Slaughter withSacrificial Knives",10,120,"Aelf, Infantry",,25mm
+Witch Aelves with Bladed Bucklers,10,100,"Aelf, Infantry",,25mm
+Witch Aelves with Paired Sciansá,10,110,"Aelf, Infantry",,25mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹ Auric Flamekeeper,1,110 (-10),Any Fyreslayers,,32mm
+✹  Auric Runefather,1,140 (-20),"0-1 Grimnir’s Chosen, Any Fyreslayers",,32mm
+"✹ Auric Runefather onMagmadroth",1,330 (-20),"0-1 Grimnir’s Chosen,0-1 Vulcatrix’s Chosen,Any Fyreslayers","This Hero can join an eligibleregiment as Vulcatrix’s Chosen.",120 × 92mm
+✹ Auric Runemaster,1,170 (-20),"0-1 Grimnir’s Chosen, Any Fyreslayers",,32mm
+Auric Runesmiter,1,120,Any Fyreslayers,,32mm
+"✹  Auric Runesmiter onMagmadroth",1,300 (-20),Any Fyreslayers,,120 × 92mm
+✹  Auric Runeson,1,100 (-20),"0-1 Grimnir’s Chosen, Any Fyreslayers","This Hero can join an eligibleregiment as Grimnir’s Chosen.",32mm
+"✹  Auric Runeson onMagmadroth",1,280 (-20),"0-1 Grimnir’s Chosen, Any Fyreslayers","This Hero can join an eligibleregiment as Vulcatrix’s Chosen.",120 × 92mm
+✹ Battlesmith,1,100,Any Fyreslayers,"This Hero can join an eligibleregiment as Grimnir’s Chosen.",32mm
+Doomseeker,1,90,Any Fyreslayers,"This Hero can join an eligibleregiment as Grimnir’s Chosen.",32mm
+✹ Grimhold Exile,1,130,Any Fyreslayers,"This Hero can join an eligibleregiment as Grimnir’s Chosen.",32mm
+✹  Grimwrath Berzerker,1,100 (-10),Any Fyreslayers,"This Hero can join an eligibleregiment as Grimnir’s Chosen.",32mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Auric Hearthguard,5,130,"Duardin, Infantry",,32mm
+"✹ Hearthguard Berzerkers withBerzerker Broadaxes",5,110 (-10),"Duardin, Infantry",,32mm
+"✹ Hearthguard Berzerkers withFlamestrike Poleaxes",5,130 (-10),"Duardin, Infantry",,32mm
+"✹ Vulkite Berzerkers withBladed Slingshields",10,140 (-10),"Duardin, Infantry",,32mm
+"✹ Vulkite Berzerkers withFyresteel Weapons",10,130 (-10),"Duardin, Infantry",,32mm
+✹ Vulkyn Flameseekers,9,150 (-10),"Duardin, Infantry",This unit cannot be reinforced.,"32mm [4],28.5mm [5]"
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹ Akhelian King,1,160 (-20),"0-1 Akhelian Raidmaster orIsharann Emissary,Any Idoneth Deepkin",,60mm
+Akhelian Thrallmaster,1,120,Any Namarti,"This Hero can join aneligible regiment as anAkhelian Raidmaster.",32mm
+"Eidolon of Mathlann,Aspect of the Sea",1,350,"0-1 Isharann Emissary,Any Idoneth Deepkin",,100mm
+"Eidolon of Mathlann,Aspect of the Storm",1,320,"0-1 Isharann Emissary,Any Idoneth Deepkin",,100mm
+✹  Isharann Soulrender,1,90 (-30),"0-1 Isharann Emissary, Any Namarti","This Hero can join aneligible regiment as anIsharann Emissary.",40mm
+✹ I sharann Soulscryer,1,110 (-10),"0-1 Isharann Emissary, Any Namarti","This Hero can join aneligible regiment as anIsharann Emissary.",32mm
+Isharann Tidecaster,1,150,"0-1 Isharann Emissary, Any Namarti",,32mm
+"Lotann, Warden of theSoul Ledgers",1,100,Any Idoneth Deepkin,"This Hero can join aneligible regiment as anIsharann Emissary.",40mm
+"Volturnos, High King of the Deep",1,270,"0-1 Akhelian Raidmaster orIsharann Emissary,Any Idoneth Deepkin",,60mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Akhelian Allopex,1,180,"Aelf, Akhelian, Cavalry",,90 × 52mm
+Akhelian Ishlaen Guard,3,180,"Aelf, Akhelian, Cavalry",,60 × 35mm
+Akhelian Leviadon,1,480,"Aelf, Akhelian, Monster",,120 × 92mm
+Akhelian Morrsarr Guard,3,170,"Aelf, Akhelian, Cavalry",,60 × 35mm
+Namarti Reavers,10,130,"Aelf, Namarti, Infantry",,32mm
+✹  Namarti Thralls,10,100 (-10),"Aelf, Namarti, Infantry",,32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Aether-Khemist,1,130,"0-1 Skyvessel, Any Infantry","This Hero can join an eligibleregiment as a Guild Officer.",32mm
+Aetheric Navigator,1,130,"0-1 Skyvessel, Any Infantry","This Hero can join an eligibleregiment as a Guild Officer.",32mm
+✹ Arkanaut Admiral,1,160 (-20),"0-1 Guild Officer,Any Kharadron Overlords",,32mm
+"✹ Brokk Grungsson,Lord-Magnate of Barak-Nar",1,250 (-20),"0-1 Guild Officer,Any Kharadron Overlords",,50mm
+✹  Codewright,1,80 (-10),"0-1 Skyvessel, Any Infantry","This Hero can join an eligibleregiment as a Guild Officer.",32mm
+✹ Drekki Flynt,1,150 (-10),"0-1 Guild Officer, 0-1 Arkanaut Frigate,Any Infantry",,32mm
+"✹  Endrinmaster withDirigible Suit",1,180 (-40),"0-1 Skyvessel, Any Infantry","This Hero can join an eligibleregiment as a Guild Officer.",40mm
+Endrinmaster with Endrinharness,1,130,"0-1 Skyvessel, Any Infantry","This Hero can join an eligibleregiment as a Guild Officer.",32mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Arkanaut Company,10,100,"Duardin, Infantry",,25mm
+Arkanaut Frigate,1,320,"Duardin, Skyvessel, War Machine",,120 × 92mm
+Arkanaut Ironclad,1,500,"Duardin, Skyvessel, War Machine",,170 × 105mm
+Endrinriggers,3,120,"Duardin, Infantry",,32mm
+✹  Grundstok Gunhauler,1,160 (-20),"Duardin, Skyvessel, War Machine",,105 × 70mm
+Grundstok Thunderers,5,140,"Duardin, Infantry",,32mm
+✹ S kywardens,3,130 (-10),"Duardin, Infantry",,32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹  Alarith Stonemage,1,120 (-30),"0-1 Ydrilan Riverblades,Any Vanari Auralan Wardens,Any Alarith",,40mm
+"✹ Archmage Teclis andCelennar, Spirit of Hysh",1,600 (+10),"0-1 Lumineth Paragon,Any Lumineth Realm-lords",,160mm
+"Avalenor, the Stoneheart King",1,410,"Any Vanari Auralan Wardens,Any Alarith",,100mm
+"Ellania and Ellathor,Eclipsian Warsages",1,280,"0-1 Lumineth Paragon,Any Lumineth Realm-lords",,40mm
+✹ Hurakan Windmage,1,150 (+10),"0-1 Ydrilan Riverblades,Any Vanari Auralan Wardens,Any Hurakan",,60 × 35mm
+"✹ L yrior Uthralle,Warden of Ymetrica",1,220 (-20),"0-1 Lumineth Paragon,Any Alarith, Any Vanari",,90 × 52mm
+Scinari Calligrave,1,160,"0-1 Ydrilan Riverblades,Any Vanari Auralan Wardens,Any Vanari Bladelords",,32mm
+Scinari Cathallar,1,100,"0-1 Ydrilan Riverblades,Any Vanari Auralan Wardens,Any Vanari Bladelords",,32mm
+Scinari Enlightener,1,190,"0-1 Ydrilan Riverblades,Any Vanari Auralan Wardens,Any Vanari Bladelords",,32mm
+✹ S cinari Loreseeker,1,140 (-10),"0-1 Ydrilan Riverblades,Any Vanari Auralan Wardens,Any Vanari Bladelords",,32mm
+"Sevireth, Lord of theSeventh Wind",1,350,"Any Vanari Auralan Wardens,Any Hurakan",,60mm
+✹  The Light of Eltharion,1,230 (-20),"0-1 Lumineth Paragon,Any Lumineth Realm-lords","This Hero can join an eligibleregiment as a Lumineth Paragon.",50mm
+Vanari Bannerblade,1,130,Any Vanari,"This Hero can join an eligibleregiment as a Lumineth Paragon.",40mm
+Vanari Lord Regent,1,230,"0-1 Lumineth Paragon,0-1 Ydrilan Riverblades,Any Vanari",,90 × 52mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹  Alarith Spirit of the Mountain,1,320 (-10),"Alarith, Monster",,100mm
+✹ Alarith Stoneguard,5,120 (-10),"Aelf, Alarith, Infantry",,32mm
+Hurakan Spirit of the Wind,1,250,"Hurakan, Monster",,60mm
+✹  Hurakan Windchargers,5,180 (-10),"Aelf, Hurakan, Cavalry",,60 × 35mm
+✹ Vanari Auralan Sentinels,10,160 (+10),"Aelf, Vanari, Infantry",,32mm
+✹  Vanari Auralan Wardens,10,150 (+10),"Aelf, Vanari, Infantry",,32mm
+✹ Vanari Bladelords,5,140 (-10),"Aelf, Vanari, Infantry",,32mm
+Vanari Dawnriders,5,230,"Aelf, Vanari, Cavalry",,60 × 35mm
+Vanari Starshard Ballista,1,110,"Vanari, War Machine",,80mm
+Ydrilan Riverblades,10,160,"Aelf, Infantry",This unit cannot be reinforced.,"32mm [5],28.5mm [5]"
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Lord Kroak,1,430,"0-1 Skink Starpriest orFavoured Spawning,Any Seraphon",,80mm
+Ripperdactyl Chief,1,130,"0-1 Monster, 0-1 Beast,Any Skink Cavalry",,50mm
+✹  Saurus Astrolith Bearer,1,130 (-20),Any Saurus,"This Hero can join aneligible regiment as aFavoured Spawning.",40mm
+Saurus Oldblood,1,110,"0-1 Favoured Spawning, Any Saurus",,32mm
+✹ S aurus Oldblood on Carnosaur,1,290 (-40),"0-1 Favoured Spawning,Any Monster, Any Saurus",,120 × 92mm
+Saurus Scar-Veteran on Aggradon,1,190,"0-1 Favoured Spawning, Any Saurus",,90 × 52mm
+"✹ S aurus Scar-Veteran onCarnosaur",1,230 (-40),"0-1 Favoured Spawning,0-1 Monster, Any Saurus",,120 × 92mm
+✹ S kink Oracle on Troglodon,1,240 (-40),"0-1 Monster, 0-1 Beast,Any Kroxigor,Any non-Monster Skink",,120 × 92mm
+✹ S kink Starpriest,1,100 (-10),"0-1 Monster, 0-1 Beast,Any Kroxigor,Any non-Monster Skink","This Hero can joinLord Kroak ’s or a SlannStarmaster’s regiment.",25mm
+✹ S kink Starseer,1,170 (+10),"0-1 Monster, Any Beast,Any Kroxigor,Any non-Monster Skink",,50mm
+Slann Starmaster,1,280,"0-1 Skink Starpriest orFavoured Spawning,Any Seraphon",,80mm
+✹ S tegadon Chief,1,200 (-40),"0-1 Monster, Any Kroxigor,Any non-Monster Skink",,120 × 92mm
+Terradon Chief,1,130,"0-1 Monster, 0-1 Beast,Any Skink Cavalry",,50mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Aggradon Lancers,3,220,"Saurus, Cavalry",,75 × 42mm
+✹ Bastiladon with Ark of Sotek,1,230 (-30),"Skink, Monster",,120 × 92mm
+✹ Bastiladon with Solar Engine,1,240 (-30),"Skink, Monster",,120 × 92mm
+✹  Engine of the Gods,1,180 (-30),"Skink, Monster",,120 × 92mm
+"Hunters of Huanchiwith Dartpipes",5,80,"Skink, Infantry",This unit cannot be reinforced.,"28.5mm [1],25mm [4]"
+"✹  Hunters of Huanchiwith Starstone Bolas",5,100 (+10),"Skink, Infantry",This unit cannot be reinforced.,"28.5mm [2],25mm [3]"
+✹ Kroxigor,3,210 (-10),"Kroxigor, Infantry",,50mm
+Kroxigor Warspawned,3,220,"Kroxigor, Infantry",,50mm
+Raptadon Chargers,5,140,"Skink, Cavalry",,60 × 35mm
+Raptadon Hunters,5,130,"Skink, Cavalry",,60 × 35mm
+Ripperdactyl Riders,3,110,"Skink, Cavalry",,50mm
+Ripperdactyl Riders (2 models),2,70,"Skink, Cavalry","You can include 1 unit of thistype for each RipperdactylChief in your army.This unit cannot be reinforced.",50mm
+Saurus Guard,5,120,"Saurus, Infantry",,32mm
+✹ S aurus Warriors,10,160 (-10),"Saurus, Infantry",,32mm
+✹ S kinks,10,80 (-10),"Skink, Infantry",,25mm
+✹ S pawn of Chotec,1,120 (-30),"Skink, Beast",,"90 × 52mm[1], 25mm [3]"
+Stegadon,1,220,"Skink, Monster",,120 × 92mm
+✹  Terradon Riders,3,90 (-10),"Skink, Cavalry",,50mm
+Terradon Riders (2 models),2,70,"Skink, Cavalry","You can include 1 unit of thistype for each Terradon Chief inyour army.This unit cannot be reinforced.",50mm
+✹ Terrawings,3,70 (-20),Beast,This unit cannot be reinforced.,32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Astreia Solbright,1,220,Any Stormcast Eternals,"This unit will move toWarhammer Legends on1 June 2025.",90 × 52mm
+"Aventis Firestrike,Magister of Hammerhal",1,310,Any Stormcast Eternals,"This unit will move toWarhammer Legends on1 June 2025.",100mm
+"Celestant-Prime,Hammer of Sigmar",1,320,"0-1 Stormcast Exemplar,Any Stormcast Eternals",,100mm
+Drakesworn Templar,1,440,"0-1 Stormcast Exemplar,Any Extremis Chamber,Any Warrior Chamber",,170 × 105mm
+✹ Gardus Steel Soul,1,170,"0-1 Stormcast Exemplar,0-1 Gryph-hounds,Any Warrior Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.",50mm
+✹  Gavriel Sureheart,1,140,"0-1 Gryph-hounds, Any Infantry","This Hero can join aneligible regiment as aStormcast Exemplar.This unit will move toWarhammer Legends on1 June 2025.",40mm
+"Ionus Cryptborn,Warden of Lost Souls",1,400,"0-1 Stormcast Exemplar,Any Stormcast Eternals",,100mm
+Karazai the Scarred,1,480,"0-1 Stormcast Exemplar,Any Stormcast Eternals",,160mm
+Knight-Arcanum,1,120,"0-1 Gryph-hounds,Any Warrior Chamber",,40mm
+✹  Knight-Azyros,1,150 (-30),"0-1 Warrior Chamber,Any Ruination Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.",50mm
+✹ Knight-Draconis,1,240 (-10),Any Extremis Chamber,,105 × 70mm
+Knight-Heraldor,1,110,"0-1 Gryph-hounds,Any Warrior Chamber","This unit will move toWarhammer Legends on1 June 2025.",40mm
+Knight-Incantor,1,140,"0-1 Gryph-hounds,Any Sacrosanct Chamber Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+"✹ Knight-Judicator withGryph-hounds",1,140 (-20),"Any Gryph-hounds,Any Warrior Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.","90 × 52mm[1], 40mm [2]"
+✹ Knight-Questor,1,120 (-20),"0-1 Questor Soulsworn,0-1 Gryph-hounds,Any Ruination Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.",40mm
+Knight-Relictor,1,120,"0-1 Gryph-hounds,Any Warrior Chamber",,40mm
+✹ Knight-Venator,1,190,"0-1 Gryph-hounds,Any Warrior Chamber Infantry","This Hero can join aneligible regiment as aStormcast Exemplar.This unit will move toWarhammer Legends on1 June 2025.",50mm
+✹  Knight-Vexillor,1,110 (-10),"0-1 Gryph-hounds,Any Warrior Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.",40mm
+✹ Knight-Zephyros,1,130,"0-1 Gryph-hounds,Any Vanguard Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.This unit will move toWarhammer Legends on1 June 2025.",40mm
+"Krondys, Son of Dracothion",1,560,"0-1 Stormcast Exemplar,Any Stormcast Eternals",,160mm
+✹  Lord-Aquilor,1,160 (-20),"Any Gryph-hounds,Any Vanguard Chamber",,90 × 52mm
+Lord-Arcanum,1,140,Any Sacrosanct Chamber Infantry,"This unit will move toWarhammer Legends on1 June 2025.",40mm
+"Lord-Arcanum onCelestial Dracoline",1,210,Any Sacrosanct Chamber Cavalry,"This unit will move toWarhammer Legends on1 June 2025.",90 × 52mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Lord-Arcanum on Gryph-charger,1,220,Any Sacrosanct Chamber,"This unit will move toWarhammer Legends on1 June 2025.",90 × 52mm
+Lord-Arcanum on Tauralon,1,280,Any Sacrosanct Chamber,"This unit will move toWarhammer Legends on1 June 2025.",100mm
+Lord-Castellant,1,150,Any Warrior Chamber Infantry,"This unit will move toWarhammer Legends on1 June 2025.",40mm
+Lord-Celestant,1,130,"0-1 Stormcast Exemplar,0-1 Gryph-hounds,Any Warrior Chamber",,40mm
+Lord-Celestant on Dracoth,1,190,"0-1 Stormcast Exemplar,Any Extremis Chamber,Any Warrior Chamber",,90 × 52mm
+Lord-Celestant on Stardrake,1,480,"0-1 Stormcast Exemplar,Any Extremis Chamber,Any Warrior Chamber",,170 × 105mm
+"Lord-CommanderBastian Carthalos",1,270,"0-1 Stormcast Exemplar,Any Stormcast Eternals",,50mm
+Lord-Exorcist,1,150,Any Sacrosanct Chamber Infantry,"This unit will move toWarhammer Legends on1 June 2025.",40mm
+✹  Lord-Imperatant,1,140 (-10),"0-1 Stormcast Exemplar,0-1 Gryph-hounds,Any Warrior Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.","40mm [1],32mm [1]"
+Lord-Ordinator,1,120,"Any Sacrosanct Chamber Infantry,Any Sacrosanct ChamberWar Machine","This unit will move toWarhammer Legends on1 June 2025.",40mm
+Lord-Relictor,1,130,"0-1 Stormcast Exemplar,0-1 Gryph-hounds,Any Ruination Chamber,Any Warrior Chamber",,40mm
+✹ Lord-Terminos,1,150,"0-1 Stormcast Exemplar,0-1 Gryph-hounds,Any Ruination Chamber,Any Warrior Chamber","This Hero can join aneligible regiment as aStormcast Exemplar.","40mm [1],25mm [1]"
+✹  Lord-Veritant,1,120 (-10),"0-1 Stormcast Exemplar,0-1 Gryph-hounds,Any Ruination Chamber,Any Warrior Chamber",,40mm
+Lord-Vigilant on Gryph-stalker,1,180,"0-1 Stormcast Exemplar,0-1 Gryph-hounds,Any Ruination Chamber,Any Warrior Chamber",,90 × 52mm
+✹ Lord-Vigilant on Morrgryph,1,240 (-40),"Any Ruination Chamber,Any Warrior Chamber",,120 × 92mm
+✹ I ridan the Witness,1,290 (-40),"Any Ruination Chamber,Any Warrior Chamber",,120 × 92mm
+Neave Blacktalon,1,340,"Neave’s Companions (required),Lorai (required),Any Vanguard Chamber",,40mm
+"Lorai, Child of the Abyss",1,0,None,"This unit can only be taken inNeave Blacktalon’s regiment.",40mm
+✹  Tornus the Redeemed,1,190 (-30),Any Ruination Chamber,,50mm
+✹ Vandus Hammerhand,1,190 (-20),"0-1 Stormcast Exemplar,Any Extremis Chamber,Any Warrior Chamber",,90 × 52mm
+"✹  Yndrasta, the Celestial Spear",1,330 (-10),"0-1 Stormcast Exemplar,Any Stormcast Eternals",,60mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Aetherwings,3,80,"Vanguard Chamber, Beast",,32mm
+✹  Annihilators,3,150 (-10),"Warrior Chamber, Infantry",,40mm
+"Annihilators withMeteoric Grandhammers",3,210,"Warrior Chamber, Infantry",,40mm
+✹  Castigators,3,110 (-20),"Sacrosanct Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+Celestar Ballista,1,140,"Sacrosanct Chamber,War Machine","This unit will move toWarhammer Legends on1 June 2025.","60mm [1],40mm [2]"
+Decimators,5,240,"Warrior Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+✹ Dracothian Guard Concussors,2,210 (-20),"Extremis Chamber, Cavalry",,90 × 52mm
+"✹  Dracothian Guard Concussors(1 model)",1,120 (-10),"Extremis Chamber, Cavalry","You can include 1 unit of thistype for each Lord-Celestant onDracoth in your army.",90 × 52mm
+✹ Dracothian Guard Desolators,2,190 (-20),"Extremis Chamber, Cavalry",,90 × 52mm
+"✹ Dracothian Guard Desolators(1 model)",1,110 (-10),"Extremis Chamber, Cavalry","You can include 1 unit of thistype for each Lord-Celestant onDracoth in your army.",90 × 52mm
+✹  Dracothian Guard Fulminators,2,220 (-10),"Extremis Chamber, Cavalry",,90 × 52mm
+"✹ Dracothian Guard Fulminators(1 model)",1,110 (-10),"Extremis Chamber, Cavalry","You can include 1 unit of thistype for each Lord-Celestant onDracoth in your army.",90 × 52mm
+✹ Dracothian Guard Tempestors,2,180 (-10),"Extremis Chamber, Cavalry",,90 × 52mm
+"✹  Dracothian Guard Tempestors(1 model)",1,100 (-10),"Extremis Chamber, Cavalry","You can include 1 unit of thistype for each Lord-Celestant onDracoth in your army.",90 × 52mm
+Evocators,5,180,"Sacrosanct Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+Evocators on Celestial Dracolines,3,240,"Sacrosanct Chamber, Cavalry","This unit will move toWarhammer Legends on1 June 2025.",90 × 52mm
+✹  Gryph-hounds,6,90 (+10),Beast,,40mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+"Judicators withBoltstorm Crossbows",5,160,"Warrior Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+Judicators with Skybolt Bows,5,140,"Warrior Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+✹ Liberators,5,100 (-10),"Warrior Chamber, Infantry",,40mm
+Neave’s Companions,3,0,"Unique, Infantry","This unit can only be taken inNeave Blacktalon’s regiment.This unit cannot be reinforced.",40mm
+Praetors,3,150,"Warrior Chamber, Infantry",,40mm
+Prosecutors,3,140,"Ruination Chamber, Infantry",,40mm
+Protectors,5,220,"Warrior Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+✹  Questor Soulsworn,6,220 (-10),"Warrior Chamber, Infantry",This unit cannot be reinforced.,40mm
+Reclusians,3,140,"Ruination Chamber, Infantry",,40mm
+✹  Retributors,5,170 (-10),"Warrior Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+Sequitors,5,170,"Sacrosanct Chamber, Infantry","This unit will move toWarhammer Legends on1 June 2025.",40mm
+Stormcoven,3,210,"Warrior Chamber, Infantry",This unit cannot be reinforced.,40mm
+✹  Stormdrake Guard,2,320 (-10),"Extremis Chamber, Monster",,105 × 70mm
+✹  Stormdrake Guard (1 model),1,160 (-10),"Extremis Chamber, Monster","You can include 1 unit of thistype for each Knight-Draconisin your army.",105 × 70mm
+✹ S tormstrike Chariot,1,140 (-10),"Warrior Chamber, War Machine",,120 × 92mm
+✹  Stormstrike Palladors,3,190 (-20),"Warrior Chamber, Cavalry",,90 × 52mm
+Vanguard-Hunters,5,120,"Vanguard Chamber, Infantry",,40mm
+"✹ Vanguard-Palladors withShock Handaxes",3,250 (+20),"Vanguard Chamber, Cavalry",,75 × 42mm
+"✹ Vanguard-Palladors withStarstrike Javelins",3,240 (+20),"Vanguard Chamber, Cavalry",,75 × 42mm
+"Vanguard-Raptors withHurricane Crossbows",3,100,"Vanguard Chamber, Infantry",,40mm
+"✹ Vanguard-Raptors withLongstrike Crossbows",3,200 (+20),"Vanguard Chamber, Infantry",,"60 × 35mm.Champion is40mm."
+Vanquishers,5,110,"Warrior Chamber, Infantry",,40mm
+Vigilors,5,130,"Warrior Chamber, Infantry",,40mm
+Vindictors,5,100,"Warrior Chamber, Infantry",,40mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Alarielle the Everqueen,1,680,"0-1 Forest Sentinel, Any Sylvaneth",,160mm
+✹  Arch-Revenant,1,130 (-20),"Any Gossamid Archers, Any Kurnothi","This Hero can join an eligibleregiment as a Forest Sentinel.",40mm
+"Belthanos, First Thorn of Kurnoth",1,350,Any Sylvaneth,,150 × 95mm
+✹ Branchwych,1,110 (-10),Any Infantry,,32mm
+✹ Drycha Hamadreth,1,240 (-50),Any Sylvaneth,,105 × 70mm
+Spirit of Durthu,1,330,"0-1 Forest Sentinel, Any Sylvaneth",,105 × 70mm
+✹ The Lady of Vines,1,250 (-30),Any Sylvaneth,,80mm
+✹ Treelord,1,220 (-40),Any Sylvaneth,"This Hero can join an eligibleregiment as a Forest Sentinel.",105 × 70mm
+✹ Treelord Ancient,1,240 (-40),"0-1 Forest Sentinel, Any Sylvaneth",,105 × 70mm
+Warsong Revenant,1,200,Any Sylvaneth,,105 × 70mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹ Dryads,10,100 (-10),Infantry,,32mm
+Gossamid Archers,5,120,Infantry,,32mm
+"Kurnoth Hunters withKurnoth Greatbows",3,200,"Kurnothi, Infantry",,50mm
+"Kurnoth Hunters withKurnoth Greatswords",3,220,"Kurnothi, Infantry",,50mm
+"Kurnoth Hunters withKurnoth Scythe",3,200,"Kurnothi, Infantry",,50mm
+Revenant Seekers,3,200,Cavalry,,60mm
+✹  Spite-Revenants,5,80 (-30),Infantry,,32mm
+Spiterider Lancers,3,210,Cavalry,,60mm
+✹ The Twistweald,8,110 (-20),Infantry,This unit cannot be reinforced.,"40mm [1],32mm [4],28.5mm [3]"
+Tree-Revenants,5,110,Infantry,,32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹ Beastlord,1,170,"0-1 Herd Alpha, Any Beasts of Chaos","This Hero can join an eligibleregiment as a Herd Alpha.This unit will move toWarhammer Legends on1 June 2025.",40mm
+✹ Doombull,1,170 (-10),"0-1 Herd Alpha, Any Beasts of Chaos","This Hero can join an eligibleregiment as a Herd Alpha.This unit will move toWarhammer Legends on1 June 2025.",50mm
+✹ Dragon Ogor Shaggoth,1,220 (-20),"0-1 Herd Alpha, Any Beasts of Chaos","This unit will move toWarhammer Legends on1 June 2025.",90 × 52mm
+✹ Great Bray-Shaman,1,130 (+10),"0-1 Herd Alpha, 0-1 Beast,Any Brayherd","This unit will move toWarhammer Legends on1 June 2025.",32mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Beasts of Chaos Chaos Spawn,1,70,Beast,"This unit will move toWarhammer Legends on1 June 2025.",50mm
+✹  Bestigors,10,210 (+10),"Brayherd, Infantry","This unit will move toWarhammer Legends on1 June 2025.",32mm
+✹ Bullgors,3,170 (-10),Infantry,"This unit will move toWarhammer Legends on1 June 2025.",50mm
+✹ Centigors,5,170 (+10),"Brayherd, Cavalry","This unit will move toWarhammer Legends on1 June 2025.",60 × 35mm
+Chaos Gargant,1,150,Monster,"This unit will move toWarhammer Legends on1 June 2025.",90 × 52mm
+Chaos Warhounds,10,130,Beast,"This unit will move toWarhammer Legends on1 June 2025.",60 × 35mm
+Chimera,1,200,Monster,"This unit will move toWarhammer Legends on1 June 2025.",120 × 92mm
+Cockatrice,1,150,Beast,"This unit will move toWarhammer Legends on1 June 2025.",60mm
+✹  Cygor,1,190 (-20),Monster,"This unit will move toWarhammer Legends on1 June 2025.",120 × 92mm
+Dragon Ogors,3,220,Cavalry,"This unit will move toWarhammer Legends on1 June 2025.",90 × 52mm
+✹ Ghorgon,1,200 (-20),Monster,"This unit will move toWarhammer Legends on1 June 2025.",120 × 92mm
+✹ Gors,10,100 (-10),"Brayherd, Infantry","This unit will move toWarhammer Legends on1 June 2025.",32mm
+✹ J abberslythe,1,190 (-20),Monster,"This unit will move toWarhammer Legends on1 June 2025.",120 × 92mm
+✹  Razorgor,1,70 (-20),Beast,"This unit will move toWarhammer Legends on1 June 2025.",75 × 42mm
+Tuskgor Chariots,1,110,"Brayherd, War Machine","This unit will move toWarhammer Legends on1 June 2025.",105 × 70mm
+Ungor Raiders,10,90,"Brayherd, Infantry","This unit will move toWarhammer Legends on1 June 2025.",25mm
+Ungors,10,80,"Brayherd, Infantry","This unit will move toWarhammer Legends on1 June 2025.",25mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZ,
+✹  Aspiring Deathbringer,1,90 (-20),Any Bloodbound,"This Hero can join aneligible regiment as aBloodbound Warmonger.",40mm,
+"Bloodmaster, Herald of Khorne",1,150,"0-1 Slaughter Seeker, Any Daemon",,40mm,
+✹ Bloodsecrator,1,130 (-20),Any Bloodbound,"This Hero can join aneligible regiment as aBloodbound Warmonger.",32mm,
+Bloodstoker,1,100,Any Bloodbound,"This Hero can join aneligible regiment as aBloodbound Warmonger.",40mm,
+✹ Bloodthirster of Insensate Rage,1,470,"0-1 Slaughter Seeker, Any Daemon","This Hero can join an eligibleregiment as a Baleful Lord.",120 × 92m,
+"✹  Bloodthirster of UnfetteredFury",1,440,"0-1 Slaughter Seeker, Any Daemon","This Hero can join an eligibleregiment as a Baleful Lord.",120 × 92m,
+Exalted Deathbringer,1,120,Any Bloodbound,"This Hero can join aneligible regiment as aBloodbound Warmonger.",40mm,
+"Herald of Khorne onBlood Throne",1,210,"0-1 Slaughter Seeker, Any Daemon",,120 × 92m,
+✹  Karanak,1,110 (-10),"0-1 Mighty Lord of Khorne,Any Claws of Karanak,Any Flesh Hounds",,75 × 42mm,
+Lord of Khorne on Juggernaut,1,220,Any Bloodbound,,90 × 52mm,
+✹  Mighty Lord of Khorne,1,130 (-10),"Any Bloodbound Warmonger,0-1 Karanak,Any Blades of Khorne",,60mm,
+Realmgore Ritualist,1,110,Any Bloodbound,,32mm,
+✹  Skarbrand,1,470 (-20),"0-1 Slaughter Seeker,Any Blades of Khorne",,100mm,
+Skarr Bloodwrath,1,150,Any Bloodbound,,40mm,
+Skullgrinder,1,130,Any Bloodbound,"This Hero can join aneligible regiment as aBloodbound Warmonger.",40mm,
+"✹ S kullmaster, Herald of Khorne",1,150 (-20),"Any Daemon Cavalry,Any War Machine",,90 × 52mm,
+✹ S kulltaker,1,130 (-10),Any Daemon,"This Hero can join an eligibleregiment as a Slaughter Seeker.",40mm,
+Slaughterpriest,1,160,Any Bloodbound,,40mm,
+✹  Wrath of Khorne Bloodthirster,1,420,"0-1 Slaughter Seeker, 0-1 Baleful Lord,Any Daemon",,120 × 92m,
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Blood Warriors,10,210,"Bloodbound, Infantry",,32mm
+✹ Bloodcrushers,3,180 (-20),"Daemon, Cavalry",,90 × 52mm
+Bloodletters,10,200,"Daemon, Infantry",,32mm
+Bloodreavers,10,100,"Bloodbound, Infantry",,32mm
+Claws of Karanak,8,110,"Bloodbound, Infantry",This unit cannot be reinforced.,"60 × 35mm[1], 40mm [1],32mm [2],28.5mm [4]"
+Flesh Hounds,5,110,"Daemon, Beast",,60 × 35mm
+✹ Khorgorath,1,130 (-20),"Bloodbound, Monster",,90 × 52mm
+✹ Mighty Skullcrushers,3,220 (-30),"Bloodbound, Cavalry",,90 × 52mm
+Skull Cannon,1,170,"Daemon, War Machine",,120 × 92mm
+Skullreapers,5,220,"Bloodbound, Infantry",,40mm
+✹  Wrathmongers,5,120 (-20),"Bloodbound, Infantry",,40mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+"✹ Changecaster, Herald ofTzeentch",1,130 (+10),Any Daemon,"This Hero can join aneligible regiment as aTzeentchian Deceiver.",32mm
+"Curseling, Eye of Tzeentch",1,150,Any Arcanite,"This Hero can join aneligible regiment as anArcanite Cabalist.",32mm
+"✹  Fateskimmer, Herald ofTzeentch on Burning Chariot",1,140 (-30),"0-1 Tzeentchian Deceiver, Any Daemon",,120 × 92mm
+✹ Gaunt Summoner,1,180 (+10),"0-1 Tzeentchian Deceiver,Any Disciples of Tzeentch",,40mm
+"Gaunt Summoner onDisc of Tzeentch",1,230,"0-1 Tzeentchian Deceiver,Any Disciples of Tzeentch",,40mm
+✹  Kairos Fateweaver,1,460 (+20),"0-1 Tzeentchian Deceiver,Any Disciples of Tzeentch",,100mm
+✹ Lord of Change,1,400 (+20),"0-1 Tzeentchian Deceiver,Any Disciples of Tzeentch",,100mm
+Magister,1,110,Any Arcanite,"This Hero can join aneligible regiment as anArcanite Cabalist.",32mm
+✹ Magister on Disc of Tzeentch,1,130 (-10),"0-1 Arcanite Cabalist, Any Arcanite",,50mm
+✹  Ogroid Thaumaturge,1,130 (-20),Any Arcanite,"This Hero can join aneligible regiment as anArcanite Cabalist.",50mm
+✹ The Changeling,1,150 (+10),Any Daemon,"This Hero can join aneligible regiment as aTzeentchian Deceiver.",40mm
+Tzaangor Shaman,1,160,"0-1 Arcanite Cabalist, Any Arcanite",,40mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+"✹  Blue Horrors andBrimstone Horrors",10,150 (+20),"Daemon, Infantry",,25mm
+✹ Burning Chariot of Tzeentch,1,120 (-20),"Daemon, War Machine",,120 × 92mm
+Chaos Spawn of Tzeentch,1,60,Beast,,50mm
+✹ Exalted Flamer of Tzeentch,1,110 (-20),"Daemon, Infantry",,75 × 42mm
+✹  Flamers of Tzeentch,3,130 (+10),"Daemon, Infantry",,32mm
+Jade Obelisk,10,100,"Arcanite, Infantry",This unit cannot be reinforced.,"32mm [5],28.5mm [5]"
+✹ Kairic Acolytes,10,90 (-10),"Arcanite, Infantry",,32mm
+✹ Pink Horrors,10,170 (+20),"Daemon, Infantry",,32mm
+✹ S creamers of Tzeentch,3,90 (-10),"Daemon, Beast",,32mm
+Tzaangor Enlightened,3,90,"Arcanite, Infantry",,40mm
+"✹ Tzaangor Enlightened onDiscs of Tzeentch",3,150 (-20),"Arcanite, Cavalry",,40mm
+✹  Tzaangor Skyfires,3,180 (+10),"Arcanite, Cavalry",,40mm
+Tzaangors,10,150,"Arcanite, Infantry",,32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+"✹  Bladebringer, Herald onExalted Chariot",1,160 (-30),"0-1 Slaaneshi Beguiler,Any War Machine",,120 × 92mm
+Contorted Epitome,1,180,"0-1 Slaaneshi Beguiler, Any Daemon",,75 × 42mm
+"✹ Dexcessa, the Talon of Slaanesh",1,200 (-40),"0-1 Synessa or Slaaneshi Beguiler,Any Hedonites of Slaanesh","This Hero can joinSynessa’s regiment.",105 × 70mm
+"Glutos Orscollion, Lordof Gluttony",1,470,"0-1 Dark Egotist, 0-1 Daemon,Any Sybarite",,170 × 105mm
+"Infernal Enrapturess,Herald of Slaanesh",1,100,Any Daemon,"This Hero can join an eligibleregiment as a Slaaneshi Beguiler.",60 × 35mm
+✹  Keeper of Secrets,1,420 (-20),"0-1 Slaaneshi Beguiler,Any Hedonites of Slaanesh",,100mm
+✹ Lord of Hubris,1,140 (-20),Any Sybarite,"This Hero can join an eligibleregiment as a Dark Egotist.",40mm
+✹  Lord of Pain,1,140 (-20),Any Sybarite,"This Hero can join an eligibleregiment as a Dark Egotist.",40mm
+Shalaxi Helbane,1,490,"0-1 Slaaneshi Beguiler,Any Hedonites of Slaanesh",,100mm
+Shardspeaker of Slaanesh,1,130,"0-1 Dark Egotist, Any Sybarite",,32mm
+"✹ S igvald, Prince of Slaanesh",1,260,"0-1 Dark Egotist, 0-1 Daemon,Any Sybarite","This Hero can join an eligibleregiment as a Dark Egotist.",60mm
+"Syll’Esske, the Vengeful Allegiance",1,220,"0-1 Slaaneshi Beguiler or Dark Egotist,Any Hedonites of Slaanesh",,50mm
+"✹  Synessa, the Voice of Slaanesh",1,230 (-50),"0-1 Dexcessa or Slaaneshi Beguiler,Any Hedonites of Slaanesh","This Hero can joinDexcessa’s regiment.",105 × 70mm
+✹  The Masque,1,140 (-10),Any Daemon,"This Hero can join an eligibleregiment as a Slaaneshi Beguiler.",32mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Blissbarb Archers,10,150,"Sybarite, Infantry",,"28.5mm [10],25mm [1]"
+Blissbarb Seekers,5,160,"Sybarite, Cavalry",,75 × 42mm
+✹ Daemonettes,10,100 (-10),"Daemon, Infantry",,25mm
+Fiends,3,150,"Daemon, Beast",,75 × 42mm
+Hellflayer,1,160,"Daemon, War Machine",,120 × 92mm
+Hellstriders,5,150,"Sybarite, Cavalry",,60 × 35mm
+✹ Myrmidesh Painbringers,5,120 (-10),"Sybarite, Infantry",,32mm
+✹ S eeker Chariot,1,90 (-10),"Daemon, War Machine",,120 × 92mm
+Seekers,5,140,"Daemon, Cavalry",,60 × 35mm
+✹  Slaangor Fiendbloods,3,120 (-10),"Sybarite, Infantry",,40mm
+Slickblade Seekers,5,190,"Sybarite, Cavalry",,75 × 42mm
+Symbaresh Twinsouls,5,130,"Sybarite, Infantry",,32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Bloab Rotspawned,1,300,"0-1 Rotbringer Lord,Any Maggotkin of Nurgle",,100mm
+Great Unclean One,1,480,"0-1 Plague Scion,Any Maggotkin of Nurgle",,130mm
+Gutrot Spume,1,160,"0-1 Rotbringer Lord, Any Rotbringers",,40mm
+✹ Harbinger of Decay,1,150 (-20),"0-1 Rotbringer Lord, Any Rotbringers",,75 × 42mm
+Horticulous Slimux,1,150,Any Daemon,,105 × 70mm
+Lord of Afflictions,1,220,"Any Plague Drones,Any Pusgoyle Blightlords",,60mm
+✹ Lord of Blights,1,130 (-20),Any Rotbringers Infantry,"This Hero can join an eligibleregiment as a Rotbringer Lord.",40mm
+✹  Lord of Plagues,1,130 (-20),Any Rotbringers Infantry,"This Hero can join an eligibleregiment as a Rotbringer Lord.",40mm
+Morbidex Twiceborn,1,300,"0-1 Rotbringer Lord,Any Maggotkin of Nurgle",,100mm
+Orghotts Daemonspew,1,320,"0-1 Rotbringer Lord,Any Maggotkin of Nurgle",,100mm
+"Poxbringer, Herald of Nurgle",1,120,Any Daemon,"This Hero can join an eligibleregiment as a Plague Scion.",32mm
+Rotbringer Sorcerer,1,120,"0-1 Rotbringer Lord, Any Rotbringers",,32mm
+✹  Rotigus,1,460 (-20),"0-1 Plague Scion,Any Maggotkin of Nurgle",,130mm
+"Sloppity Bilepiper,Herald of Nurgle",1,110,Any Daemon,"This Hero can join an eligibleregiment as a Plague Scion.",32mm
+"Spoilpox Scrivener,Herald of Nurgle",1,100,Any Daemon,"This Hero can join an eligibleregiment as a Plague Scion.",40mm
+✹  The Glottkin,1,510 (-20),"0-1 Rotbringer Lord,Any Maggotkin of Nurgle",,130mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹ Beasts of Nurgle,1,140 (-10),"Daemon, Beast",,60mm
+Nurglings,3,100,"Daemon, Infantry",,40mm
+Plague Drones,3,180,"Daemon, Cavalry",,60mm
+Plaguebearers,10,140,"Daemon, Infantry",,32mm
+Pusgoyle Blightlords,2,250,"Rotbringers, Cavalry",,60mm
+Pusgoyle Blightlords (1 model),1,130,"Rotbringers, Cavalry","You can include 1 unit of thistype for each Lord of Afflictionsin your army.",60mm
+Putrid Blightkings,5,190,"Rotbringers, Infantry",,40mm
+Rotmire Creed,10,130,"Rotbringers, Infantry",This unit cannot be reinforced.,"32mm [2],28.5mm [2],25mm [6]"
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Arch-Warlock,1,170,"0-1 Clanrats, Any Skryre",,32mm
+✹ Clawlord,1,80 (-20),Any Verminus,"This Hero can join aVerminlord Warbringer’sregiment or an eligible regimentas a Skaven Overclaw.",32mm
+✹  Clawlord on Gnaw-beast,1,130 (-30),Any Verminus,"This Hero can join aVerminlord Warbringer’sregiment or an eligible regimentas a Skaven Overclaw.",90 × 52mm
+✹  Deathmaster,1,120 (-40),"0-1 Clanrats, Any Eshin","This Hero can join aVerminlord Deceiver’sregiment or an eligible regimentas a Skaven Overclaw.",32mm
+Grey Seer,1,120,"0-1 Skaven Overclaw, Any Skaven",,32mm
+Grey Seer on Screaming Bell,1,350,"0-1 Skaven Overclaw, Any Skaven",,120 × 92mm
+✹  Krittok Foulblade,1,180 (-40),Any Verminus,,40mm
+✹  Lord Skreech Verminking,1,410 (-20),"0-1 Skaven Overclaw, Any Skaven",,120 × 92mm
+Master Moulder,1,100,"0-1 Clanrats, Any Moulder",,32mm
+Plague Priest on Plague Furnace,1,340,"0-1 Clanrats, Any Pestilens",,120 × 92mm
+Thanquol on Boneripper,1,360,"0-1 Skaven Overclaw, Any Skaven",,105 × 70mm
+✹ Verminlord Corruptor,1,330 (-30),"0-1 Clanrats, Any Pestilens",,120 × 92mm
+Verminlord Deceiver,1,410,"0-1 Clanrats, 0-1 Deathmaster, AnyEshin",,120 × 92mm
+✹ Verminlord Warbringer,1,320 (-30),"0-1 Clawlord, Any Verminus",,120 × 92mm
+Verminlord Warpseer,1,340,"0-1 Skaven Overclaw, Any Skaven",,120 × 92mm
+"✹ Vizzik Skour, Prophet of theHorned Rat",1,400 (-50),"0-1 Skaven Overclaw, Any Skaven",,130mm
+✹ Warlock Bombardier,1,110 (-10),"0-1 Clanrats, Any Skryre","This Hero can join an eligibleregiment as a Skaven Overclaw.",32mm
+✹  Warlock Engineer,1,130 (-10),"0-1 Clanrats, Any Skryre","This Hero can join an eligibleregiment as a Skaven Overclaw.",32mm
+✹ Warlock Galvaneer,1,140,"0-1 Clanrats, Any Skryre","This Hero can join an eligibleregiment as a Skaven Overclaw.",32mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹ Acolyte Globadiers,5,100 (-30),"Skryre, Infantry, Weapon Team","You cannot include more than1 Skryre Weapon Teamin a regiment led by anon-Skryre Hero.",28.5mm
+✹ Brood Terror,1,260 (-40),"Moulder, Monster",,90mm
+Clanrats,20,150,"Verminus, Infantry",,25mm
+Doom-Flayers,2,130,"Skryre, War Machine","You cannot include more than1 Skryre War Machinein a regiment led by anon-Skryre Hero.",50mm
+✹  Doomwheel,1,120 (-20),"Skryre, War Machine","You cannot include more than1 Skryre War Machinein a regiment led by anon-Skryre Hero.",105 × 70mm
+✹ Hell Pit Abomination,1,240 (-30),"Moulder, Monster",,120 × 92mm
+Night Runners,10,130,"Eshin, Infantry",,25mm
+Plague Monks,20,140,"Pestilens, Infantry",,25mm
+✹ Plagueclaw,1,120 (-20),"Pestilens, War Machine",,120 × 92mm
+Plaguepack,5,140,"Pestilens, Infantry",,"32mm [1],28.5mm [1],25mm [4]"
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Rat Ogors,3,160,"Moulder, Infantry",,50mm
+✹  Ratling Guns,3,170 (+20),"Skryre, Infantry, Weapon Team","You cannot include more than1 Skryre Weapon Teamin a regiment led by anon-Skryre Hero.",60 × 35mm
+✹ Ratling Warpblaster,1,150 (-30),"Skryre, War Machine","You cannot include more than1 Skryre War Machinein a regiment led by anon-Skryre Hero.",105 × 70mm
+Stormfiends,3,260,"Skryre, Moulder, Infantry",,60mm
+✹ S tormvermin,10,120 (-20),"Verminus, Infantry",,28.5mm
+✹  Warp-Grinder,1,140 (-30),"Skryre, War Machine","You cannot include more than1 Skryre War Machinein a regiment led by anon-Skryre Hero.",90 × 52mm
+✹ Warp Lightning Cannon,1,140 (-20),"Skryre, War Machine","You cannot include more than1 Skryre War Machinein a regiment led by anon-Skryre Hero.",120 × 92mm
+Warpfire Throwers,3,140,"Skryre, Infantry, Weapon Team","You cannot include more than1 Skryre Weapon Teamin a regiment led by anon-Skryre Hero.",60 × 35mm
+Warplock Jezzails,3,150,"Skryre, Infantry",,60 × 35mm
+Warpvolt Scourgers,3,190,"Skryre, Infantry, Weapon Team","You cannot include more than1 Skryre Weapon Teamin a regiment led by anon-Skryre Hero.",60 × 35mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZ,
+"Abraxia, Spear of the Everchosen",1,340,"0-1 Ruinous Champion,Any Slaves to Darkness",,100mm,
+"Archaon, the Everchosen",1,870,"0-1 Ruinous Champion,Any Slaves to Darkness",,160mm,
+"Be’lakor, the Dark Master",1,440,"0-1 Eternus or Ruinous Champion,Any Slaves to Darkness",,100mm,
+Centaurion Marshal,1,160,"0-1 Monster, Any Chaos Legionnaires,Any Daemon","This Hero can join aneligible regiment as aRuinous Champion.",80mm,
+✹ Chaos Lord,1,100,"0-1 Ruinous Champion, 0-1 Monster,Any Warriors of Chaos","This Hero can join aneligible regiment as aRuinous Champion.",40mm,
+"✹ Chaos Lord onDaemonic Mount",1,160 (-10),"0-1 Ruinous Champion, 0-1 Monster,Any Warriors of Chaos","This Hero can join aneligible regiment as aRuinous Champion.",90 × 52mm,
+✹ Chaos Lord on Karkadrak,1,230,"0-1 Ruinous Champion, 0-1 Monster,Any Warriors of Chaos","This Hero can join aneligible regiment as aRuinous Champion.",90 × 52mm,
+✹  Chaos Sorcerer Lord,1,120,"0-1 Ruinous Champion, 0-1 Monster,Any Warriors of Chaos",,40mm,
+Daemon Prince,1,290,"0-1 Ruinous Champion,Any Slaves to Darkness",,60mm,
+✹  Darkoath Chieftain,1,90 (-20),"0-1 Monster, Any Darkoath","This Hero can join an eligibleregiment as an Oathsworn.",32mm,
+"✹ Darkoath Chieftainon Warsteed",1,130 (-20),"0-1 Oathsworn, 0-1 Monster,Any Darkoath","This Hero can join an eligibleregiment as an Oathsworn.",75 × 42mm,
+Darkoath Warqueen,1,120,"0-1 Oathsworn, 0-1 Monster,Any Darkoath",,32mm,
+"Eternus, Blade of the First Prince",1,200,"0-1 Monster, Any Chaos Furies,Any Chaos Legionnaires,Any Warriors of Chaos","This Hero can joinBe’lakor’s regiment.",90 × 52mm,
+✹  Exalted Hero of Chaos,1,110 (+10),"0-1 Monster,Any Warriors of Chaos","This Hero can join aneligible regiment as aRuinous Champion.",40mm,
+Gaunt Summoner,1,170,Any Slaves to Darkness,,40mm,
+"✹ Gaunt Summoner onDisc of Tzeentch",1,210 (-10),Any Slaves to Darkness,,40mm,
+✹ Gunnar Brand,1,240 (-20),"Singri Brand (required),The Oathsworn Kin (required),Any Darkoath",,32mm,
+Singri Brand,1,0,None,"This unit can only be taken inGunnar Brand’s regiment.",60 × 35mm,
+Ogroid Myrmidon,1,150,"Any Ogroid Theridons,Any Monster, Any Daemon","This Hero can join aneligible regiment as aRuinous Champion.",50mm,
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Chaos Chariot,1,80,"Warriors of Chaos, War Machine",,120 × 92mm
+Chaos Chosen,5,260,"Warriors of Chaos, Infantry",,40mm
+✹ Chaos Furies,6,120 (+10),"Daemon, Infantry",,32mm
+Chaos Knights,5,250,"Warriors of Chaos, Cavalry",,75 × 42mm
+Chaos Legionnaires,8,80,Infantry,This unit cannot be reinforced.,"32mm [5],28.5mm [3]"
+Chaos Spawn,1,60,Beast,,50mm
+Chaos Warriors,10,200,"Warriors of Chaos, Infantry",,32mm
+Darkoath Fellriders,5,150,"Darkoath, Cavalry",,60 × 35mm
+✹  Darkoath Marauders,10,80 (-20),"Darkoath, Infantry",,28.5mm
+✹ Darkoath Savagers,10,100 (-20),"Darkoath, Infantry",This unit cannot be reinforced.,"32mm [3],28.5mm [7]"
+✹ Darkoath Wilderfiend,1,140 (-10),"Darkoath, Beast",,60mm
+Fomoroid Crusher,1,120,Monster,,60mm
+Gorebeast Chariot,1,100,"Warriors of Chaos, War Machine",,120 × 92mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+"Legion of the First Prince Beastsof Nurgle",1,150,"Legion of the First Prince,Daemon, Beast","This unit can only be taken in aLegion of the First Prince Armyof Renown.",60mm
+"Legion of the First PrinceBloodcrushers",3,200,"Legion of the First Prince,Daemon, Cavalry","This unit can only be taken in aLegion of the First Prince Armyof Renown.",90 × 52mm
+"Legion of the First PrinceBloodletters",10,200,"Legion of the First Prince,Daemon, Infantry","This unit can only be taken in aLegion of the First Prince Armyof Renown.",32mm
+Legion of the First Prince Fiends,3,150,"Legion of the First Prince,Daemon, Beast","This unit can only be taken in aLegion of the First Prince Armyof Renown.",75 × 42mm
+"Legion of the First Prince Flamersof Tzeentch",3,120,"Legion of the First Prince,Daemon, Infantry","This unit can only be taken in aLegion of the First Prince Armyof Renown.",32mm
+"Legion of the First PrinceHellflayer",1,160,"Legion of the First Prince,Daemon, War Machine","This unit can only be taken in aLegion of the First Prince Armyof Renown.",120 × 92mm
+"Legion of the First PrincePlaguebearers",10,140,"Legion of the First Prince,Daemon, Infantry","This unit can only be taken in aLegion of the First Prince Armyof Renown.",32mm
+"Legion of the First PrinceScreamers of Tzeentch",3,100,"Legion of the First Prince,Daemon, Beast","This unit can only be taken in aLegion of the First Prince Armyof Renown.",32mm
+Mindstealer Sphiranx,1,170,Monster,,90 × 52mm
+Mutalith Vortex Beast,1,180,"Daemon, Monster",,120 × 92mm
+Ogroid Theridons,3,180,Infantry,,50mm
+✹ Raptoryx,6,100 (+10),Beast,,60 × 35mm
+Slaughterbrute,1,220,"Daemon, Monster",,120 × 92mm
+The Oathsworn Kin,3,0,"Unique, Darkoath, Infantry","This unit can only be taken inGunnar Brand’s regiment.This unit cannot be reinforced.",32mm
+✹ Varanguard,3,330 (+10),"Warriors of Chaos, Cavalry",,75 × 42mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹  Abhorrant Archregent,1,180 (-10),"0-1 Flesh-eater Noble,Any Flesh-eater Courts",,40mm
+Abhorrant Cardinal,1,120,"0-1 Flesh-eater Noble,0-1 Knights, Any Serfs",,32mm
+Abhorrant Ghoul King,1,120,"0-1 Flesh-eater Noble,Any Flesh-eater Courts",,32mm
+"✹  Abhorrant Ghoul King onRoyal Terrorgheist",1,340 (-40),"0-1 Flesh-eater Noble,Any Flesh-eater Courts",,130mm
+"✹ Abhorrant Ghoul King onRoyal Zombie Dragon",1,340 (-40),"0-1 Flesh-eater Noble,Any Flesh-eater Courts",,130mm
+✹  Abhorrant Gorewarden,1,140 (-20),"0-1 Flesh-eater Noble,0-1 Serfs, Any Knights",,40mm
+✹ Crypt Haunter Courtier,1,120 (-20),"0-1 Serfs, Any Crypt Horrors","This Hero can join an eligibleregiment as a Flesh-eater Noble.",50mm
+✹  Crypt Infernal Courtier,1,140 (-30),"0-1 Serfs, Any Crypt Flayers","This Hero can join an eligibleregiment as a Flesh-eater Noble.",50mm
+✹ Grand Justice Gormayne,1,110,"0-1 Knights, Any Serfs","This Hero can join an eligibleregiment as a Flesh-eater Noble.",32mm
+Marrowscroll Herald,1,120,Any Serfs,"This Hero can join an eligibleregiment as a Flesh-eater Noble.",32mm
+"✹  Nagash, Supreme Lordof the Undead",1,840 (-40),"0-1 Flesh-eater Noble,Any Flesh-eater Courts",,130mm
+Royal Decapitator,1,100,Any Serfs,"This Hero can join an eligibleregiment as a Flesh-eater Noble.",32mm
+"✹ Ushoran, Mortarch of Delusion",1,440 (-30),"0-1 Flesh-eater Noble,Any Flesh-eater Courts",,130mm
+✹ Varghulf Courtier,1,160 (-20),"Any Knights, Any Serfs","This Hero can join an eligibleregiment as a Flesh-eater Noble.",90 × 52mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹ Crypt Flayers,3,150 (-20),"Knights, Infantry",,50mm
+✹  Crypt Flayers (2 models),2,80 (-30),"Knights, Infantry","You can include 1 unit of thistype for each Crypt InfernalCourtier in your army.This unit cannot be reinforced.",50mm
+✹ Crypt Ghouls,20,160 (-10),"Serfs, Infantry",,25mm
+✹ Crypt Horrors,3,140 (-10),"Knights, Infantry",,50mm
+✹  Crypt Horrors (2 models),2,90 (-10),"Knights, Infantry","You can include 1 unit of thistype for each Crypt HaunterCourtier in your army.This unit cannot be reinforced.",50mm
+✹  Cryptguard,10,100 (-20),"Serfs, Infantry",,25mm
+✹  Morbheg Knights,3,160 (-10),"Knights, Cavalry",,75 × 42mm
+✹ Royal Beastflayers,10,100 (-20),"Serfs, Infantry",This unit cannot be reinforced.,"40mm [2],32mm [2],28.5mm [3],25mm [3]"
+✹  Royal Terrorgheist,1,240 (-20),Monster,,130mm
+✹ Royal Zombie Dragon,1,250 (-20),Monster,,130mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹  Awlrach the Drowner,1,170 (+10),"0-1 Cursed Soul, Any Nighthaunt",,80mm
+Cairn Wraith,1,130,"0-1 Black Coach, Any Infantry","This Hero can join an eligibleregiment as a Cursed Soul.",25mm
+✹  Guardian of Souls,1,150 (+10),"0-1 Black Coach, Any Infantry",,32mm
+✹  Knight of Shrouds,1,120 (-10),"0-1 Cursed Soul, 0-1 Black Coach,Any Infantry",,32mm
+"✹ Knight of Shrouds onEthereal Steed",1,190 (+10),"0-1 Cursed Soul, 0-1 Black Coach,Any Cavalry",,75 × 42mm
+Krulghast Cruciator,1,150,"0-1 Black Coach, Any Infantry",,40mm
+"✹ Kurdoss Valentian, theCraven King",1,190 (-10),"0-1 Cursed Soul, Any Nighthaunt",,60mm
+"✹ Lady Olynder, Mortarch ofGrief",1,310 (+10),"0-1 Cursed Soul, Any Nighthaunt",,60mm
+✹ Lord Executioner,1,170 (+20),"0-1 Black Coach, Any Infantry","This Hero can join an eligibleregiment as a Cursed Soul.",40mm
+"Nagash, Supreme Lord ofthe Undead",1,880,"0-1 Cursed Soul, Any Nighthaunt",,130mm
+✹ Reikenor the Grimhailer,1,240 (+20),"0-1 Cursed Soul, Any Nighthaunt",,75 × 42mm
+Scriptor Mortis,1,120,"0-1 Black Coach, Any Infantry","This Hero can join an eligibleregiment as a Cursed Soul.",40mm
+✹  Spirit Torment,1,130,"0-1 Black Coach, Any Infantry","This Hero can join an eligibleregiment as a Cursed Soul.",40mm
+✹  Tomb Banshee,1,150,"0-1 Black Coach, Any Infantry","This Hero can join an eligibleregiment as a Cursed Soul.",25mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹  Black Coach,1,240 (-20),War Machine,,170 × 105mm
+✹ Bladegheist Revenants,10,180 (+20),Infantry,,32mm
+Chainghasts,2,100,Infantry,This unit cannot be reinforced.,32mm
+Chainrasps,10,100,Infantry,,25mm
+Craventhrone Guard,5,100,Infantry,,32mm
+✹  Dreadblade Harrows,2,170 (+10),Cavalry,,60 × 35mm
+✹ Dreadscythe Harridans,10,170 (+10),Infantry,,32mm
+Glaivewraith Stalkers,4,80,Infantry,,32mm
+✹  Grimghast Reapers,10,150 (+10),Infantry,,32mm
+✹  Hexwraiths,5,200 (+20),Cavalry,,60 × 35mm
+Myrmourn Banshees,4,120,Infantry,,32mm
+Pyregheists,8,120,Infantry,This unit cannot be reinforced.,"40mm [1],32mm [4],28.5mm [3]"
+Spirit Hosts,3,130,Infantry,,50mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹  Arch-Kavalos Zandtos,1,230,Any Ossiarch Bonereapers,"This Hero can join aneligible regiment as aLegion Subcommander.",80mm
+"Arkhan the Black,Mortarch of Sacrament",1,410,"0-1 Legion Subcommander,Any Ossiarch Bonereapers",,120 × 92mm
+"✹ Katakros, Mortarch ofthe Necropolis",1,520 (+20),"0-1 Legion Subcommander,Any Ossiarch Bonereapers",,120 × 92mm
+Liege-Kavalos,1,210,Any Ossiarch Bonereapers,"This Hero can join aneligible regiment as aLegion Subcommander.",80mm
+✹ Mortisan Boneshaper,1,120 (-10),"0-1 Gothizzar Harvester, Any Infantry",,32mm
+Mortisan Ossifector,1,110,"0-1 Gothizzar Harvester,0-1 Mortek Crawler, Any Infantry",,32mm
+Mortisan Soulmason,1,160,"0-1 Gothizzar Harvester, Any Infantry",,40mm
+✹ Mortisan Soulreaper,1,110 (-10),"0-1 Gothizzar Harvester, Any Infantry",,32mm
+"✹ Nagash, Supreme Lord ofthe Undead",1,900 (+20),"0-1 Legion Subcommander,Any Ossiarch Bonereapers",,130mm
+"Vokmortian, Master of theBone-tithe",1,170,Any Ossiarch Bonereapers,,40mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹ Gothizzar Harvester,1,200 (-20),Monster,,105 × 70mm
+Immortis Guard,3,200,Infantry,,50mm
+✹  Kavalos Deathriders,5,200 (+20),Cavalry,,60 × 35mm
+Morghast Archai,2,270,Infantry,,60mm
+Morghast Harbingers,2,270,Infantry,,60mm
+Mortek Crawler,1,260,War Machine,,170 × 105mm
+Mortek Guard,10,120,Infantry,,25mm
+✹  Necropolis Stalkers,3,160 (-10),Infantry,,50mm
+✹ Teratic Cohort,8,150 (+10),Infantry,This unit cannot be reinforced.,"60 × 35mm[1], 32mm [2],28.5mm [5]"
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZ,
+"✹ Belladamma Volga, First ofthe Vyrkos",1,220 (-10),"0-1 Vyrkos Retainer,Any Soulblight Gravelords",,60mm,
+✹ Bloodseeker Palanquin,1,230 (-20),Any Soulblight Gravelords,,120 × 92m,
+"✹ Cado Ezechiar,the Hollow King",1,150 (-20),Any Soulblight Gravelords,,40mm,
+✹  Coven Throne,1,250 (-20),Any Soulblight Gravelords,,120 × 92m,
+Gorslav the Gravekeeper,1,120,Any Deadwalkers,"This Hero can join an eligibleregiment as a Vyrkos Retainer.",40mm,
+"✹  Ivya Volga, the Outcast",1,120 (-40),"Any Dire Wolves, Any Fell Bats","This Hero can join an eligibleregiment as a Vyrkos Retainer.",32mm,
+"✹ Kritza, the Rat Prince",1,70 (-30),Any Soulblight Gravelords,"This Hero can join an eligibleregiment as a Vyrkos Retainer.",60 × 35mm,
+"Lady Annika, the Thirsting Blade",1,130,Any Soulblight Gravelords,"This Hero can join an eligibleregiment as a Vyrkos Retainer.",60 × 35mm,
+"✹ Lauka Vai, Mother ofNightmares",1,270 (-50),"0-1 Deathrattle Overseer,Any Soulblight Gravelords",,80mm,
+"✹ Mannfred von Carstein,Mortarch of Night",1,430,"0-1 Deathrattle Overseer,Any Soulblight Gravelords",,120 × 92m,
+Mortis Engine,1,240,Any Deadwalkers,,120 × 92m,
+"✹ Nagash, Supreme Lord ofthe Undead",1,880,"0-1 Deathrattle Overseer,Any Soulblight Gravelords",,130mm,
+Necromancer,1,140,Any Soulblight Gravelords,,32mm,
+"✹  Neferata, Mortarch of Blood",1,460,"0-1 Deathrattle Overseer,Any Soulblight Gravelords",,120 × 92m,
+✹  Prince Vhordrai,1,480,"0-1 Deathrattle Overseer,Any Soulblight Gravelords",,130mm,
+✹ Radukar the Beast,1,300 (-30),"0-1 Vyrkos Retainer,Any Soulblight Gravelords","You cannot include this unitand Radukar the Wolf in thesame army.",60mm,
+✹  Radukar the Wolf,1,150 (-20),"0-1 Vyrkos Retainer,Any Soulblight Gravelords","You cannot include this unitand Radukar the Beast in thesame army.",40mm,
+"✹  Sekhar, Fang of Nulahmia",1,210 (-30),Any Soulblight Gravelords,,60 × 35mm,
+Torgillius the Chamberlain,1,180,Any Soulblight Gravelords,"This Hero can join an eligibleregiment as a Vyrkos Retainer.",40mm,
+Vampire Lord,1,160,Any Soulblight Gravelords,,40mm,
+Vampire Lord on Zombie Dragon,1,400,Any Soulblight Gravelords,,130mm,
+✹ Vengorian Lord,1,250 (-50),Any Soulblight Gravelords,,80mm,
+Watch Captain Halgrim,1,110,Any Deathrattle,"This Hero can join an eligibleregiment as a Vyrkos Retainer.",32mm,
+✹ Wight King,1,100 (-20),Any Deathrattle,"This Hero can join aneligible regiment as aDeathrattle Overseer.",32mm,
+✹ Wight King on Skeletal Steed,1,140 (-30),Any Deathrattle,"This Hero can join aneligible regiment as aDeathrattle Overseer.",75 × 42mm,
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹  Askurgan Trueblades,8,130 (-20),Infantry,This unit cannot be reinforced.,"40mm [1],32mm [4],28.5mm [3]"
+Black Knights,5,180,"Deathrattle, Cavalry",,60 × 35mm
+Blood Knights,5,230,Cavalry,,75 × 42mm
+✹ Corpse Cart,1,70 (-20),"Deadwalkers, War Machine",,105 × 70mm
+Deadwalker Zombies,20,150,"Deadwalkers, Infantry",,25mm
+Deathrattle Skeletons,10,100,"Deathrattle, Infantry",,25mm
+Dire Wolves,10,140,"Deadwalkers, Beast",,60 × 35mm
+Fell Bats,3,100,"Deadwalkers, Beast",,40mm
+Grave Guard,10,160,"Deathrattle, Infantry",,25mm
+Kosargi Nightguard,2,120,"Deadwalkers, Infantry",This unit cannot be reinforced.,40mm
+✹  Terrorgheist,1,240 (-20),Monster,,130mm
+✹ Vargheists,3,130 (-20),Infantry,,50mm
+✹ Vargskyr,1,160 (-20),Beast,,50mm
+Vyrkos Blood-born,3,150,Infantry,This unit cannot be reinforced.,32mm
+✹ Zombie Dragon,1,250 (-20),Monster,,130mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+"Kragnos, the End of Empires",1,580,Any Bonesplitterz,,130mm
+Maniak Weirdnob,1,160,Any Bonesplitterz,"This unit will move toWarhammer Legends on1 June 2025.",60 × 35mm
+Savage Big Boss,1,130,Any Bonesplitterz,"This unit will move toWarhammer Legends on1 June 2025.This Hero can join aWurrgog Prophet’s regiment.",32mm
+Wardokk,1,100,Any Bonesplitterz,"This unit will move toWarhammer Legends on1 June 2025.",32mm
+Wurrgog Prophet,1,160,"0-1 Savage Big Boss,Any Bonesplitterz","This unit will move toWarhammer Legends on1 June 2025.",32mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Savage Big Stabbas,2,130,Infantry,"This unit will move toWarhammer Legends on1 June 2025.",60 × 35mm
+Savage Boarboy Maniaks,5,150,Cavalry,"This unit will move toWarhammer Legends on1 June 2025.",60 × 35mm
+Savage Boarboyz,5,140,Cavalry,"This unit will move toWarhammer Legends on1 June 2025.",60 × 35mm
+Savage Orruk Arrowboys,10,140,Infantry,"This unit will move toWarhammer Legends on1 June 2025.",32mm
+Savage Orruk Morboyz,10,160,Infantry,"This unit will move toWarhammer Legends on1 June 2025.",32mm
+Savage Orruks,10,140,Infantry,"This unit will move toWarhammer Legends on1 June 2025.",32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹  Dankhold Troggboss,1,240 (+10),Any Troggoth,"This Hero can joinTrugg’s regiment.",60mm
+Fungoid Cave-Shaman,1,100,"0-1 Moonclan Agitator, Any Moonclan",,32mm
+"Kragnos, the End of Empires",1,580,Any Gloomspite Gitz,,130mm
+✹ Loonboss,1,110 (-20),Any Moonclan,"This Hero can join aneligible regiment as aMoonclan Agitator.",32mm
+✹ Loonboss on Giant Cave Squig,1,120 (-10),"0-1 Moonclan Agitator, Any Moonclan","This Hero can join aneligible regiment as aMoonclan Agitator.",40mm
+✹  Loonboss on Mangler Squigs,1,220 (-40),"0-1 Moonclan Agitator, Any Moonclan",,80mm
+Rabble-Rowza,1,120,"0-1 Monster,Any Moonclan Infantry","This Hero can join aneligible regiment as aMoonclan Agitator.",32mm
+"Skragrott, the Loonking",1,230,"Any Moonclan Agitator,Any Gloomspite Gitz",,60 × 35mm
+✹ S quigboss with Gnasha-squig,1,130 (+20),"0-1 Moonclan Agitator, Any Moonclan","This Hero can join aneligible regiment as aMoonclan Agitator.",32mm
+"Trugg, the Troggoth King",1,380,"0-1 Dankhold Troggboss,Any Gloomspite Gitz",,100mm
+✹ Webspinner Shaman,1,120 (-10),Any Spiderfang,,25mm
+"✹  Webspinner Shaman onArachnarok Spider",1,270 (-20),Any Spiderfang,,160mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+"✹  Arachnarok Spider withFlinger",1,250 (-20),"Spiderfang, Monster",,160mm
+"✹ Arachnarok Spider withSpiderfang Warparty",1,240 (-20),"Spiderfang, Monster",,160mm
+Boingrot Bounderz,5,120,"Moonclan, Cavalry",,32mm
+Dankhold Troggoth,1,180,"Troggoth, Monster",,60mm
+Fellwater Troggoths,3,190,"Troggoth, Infantry",,50mm
+Gobbapalooza,5,150,"Moonclan, Infantry",This unit cannot be reinforced.,32mm
+✹  Loonsmasha Fanatics,5,130 (-10),"Moonclan, Infantry",,32mm
+✹  Mangler Squigs,1,180 (-40),"Moonclan, Monster",,80mm
+Moonclan Shootas,20,150,"Moonclan, Infantry",,25mm
+Moonclan Stabbas,20,140,"Moonclan, Infantry",,25mm
+Rockgut Troggoths,3,190,"Troggoth, Infantry",,50mm
+✹ S kitterstrand Arachnarok,1,210 (-20),"Spiderfang, Monster",,160mm
+Snarlfang Riders,5,130,"Gitmob, Cavalry",,60 × 35mm
+Sneaky Snufflers,6,140,"Moonclan, Infantry",,32mm
+Spider Riders,5,110,"Spiderfang, Cavalry",,60 × 35mm
+✹  Sporesplatta Fanatics,5,100 (-10),"Moonclan, Infantry",,32mm
+✹ S quig Herd,12,110 (+10),"Moonclan, Beast",,25mm
+Squig Hoppers,10,170,"Moonclan, Cavalry",,32mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹ Ardboy Big Boss,1,120 (-10),Any Infantry,"This Hero can join an eligibleregiment as a Headstompa.",40mm
+"✹  Gordrakk, the Fist of Gork",1,380 (-50),"0-1 Headstompa, 0-1 Tusk Wrangler,Any Ironjawz",,160mm
+"Kragnos, the End of Empires",1,580,Any Ironjawz,,130mm
+✹ Megaboss,1,190 (-20),"0-1 Headstompa, Any Ironjawz","This Hero can join an eligibleregiment as a Headstompa.",60mm
+✹ Megaboss on Maw-krusha,1,360 (-40),"0-1 Headstompa, 0-1 Tusk Wrangler,Any Ironjawz",,160mm
+✹  Tuskboss on Maw-grunta,1,260 (-20),"Any Maw-grunta Gougers,Any Maw-grunta with Hakkin’ Krew,Any Cavalry","This Hero can join an eligibleregiment as a Tusk Wrangler.",120 × 92mm
+Warchanter,1,120,Any Ironjawz,,40mm
+Weirdnob Shaman,1,130,Any Ironjawz,,40mm
+✹  Zoggrok Anvilsmasha,1,180,Any Ironjawz,"This Hero can join an eligibleregiment as a Headstompa.","50mm [1],25mm [1]"
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Ardboyz,10,180,Infantry,,32mm
+Brute Ragerz,3,130,Infantry,,40mm
+Brutes,5,200,Infantry,,40mm
+Gore-gruntas,3,180,Cavalry,,90 × 52mm
+✹  Maw-grunta Gougers,1,210 (-10),Monster,,120 × 92mm
+"✹  Maw-grunta withHakkin’ Krew",1,250 (-20),Monster,,120 × 92mm
+Weirdbrute Wrekkaz,3,110,Infantry,,40mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+"✹ Breaka-boss onMirebrute Troggoth",1,220,"0-1 Mob Wrangler, Any Kruleboyz","This Hero can join an eligibleregiment as a Swamp Beast.",80mm
+"✹  Gobsprakk, the Mouth of Mork",1,330 (-30),"0-1 Mob Wrangler, 0-1 Swamp Beast,Any Kruleboyz",,130mm
+"✹  Killaboss on Corpse-rippaVulcha",1,290,"0-1 Mob Wrangler, Any Kruleboyz","This Hero can join an eligibleregiment as a Swamp Beast.",130mm
+✹  Killaboss on Great Gnashtoof,1,180 (-20),"0-1 Mob Wrangler, Any Kruleboyz","This Hero can join an eligibleregiment as a Swamp Beast.",105 × 70mm
+✹ Killaboss with Stab-grot,1,110 (-20),Any Kruleboyz,"This Hero can join an eligibleregiment as a Mob Wrangler.","40mm [1],25mm [1]"
+"Kragnos, the End of Empires",1,580,Any Kruleboyz,,130mm
+✹  Murknob with Belcha-banna,1,120,Any Kruleboyz,"This Hero can join an eligibleregiment as a Mob Wrangler.",40mm
+"✹  Snatchaboss onSludgeraker Beast",1,320,"0-1 Mob Wrangler, Any Kruleboyz","This Hero can join an eligibleregiment as a Swamp Beast.",120 × 92mm
+✹  Swampboss Skumdrekk,1,220 (-20),"0-1 Mob Wrangler, Any Kruleboyz",,120 × 92mm
+Swampcalla Shaman with Pot-grot,1,120,Any Infantry,,"40mm [1],25mm [1]"
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Beast-skewer Killbow,1,160,War Machine,,90 × 52mm
+Gutrippaz,10,170,Infantry,,32mm
+✹  Hobgrot Slittaz,10,90 (-10),Infantry,,25mm
+Kruleboyz Monsta-killaz,7,120,Infantry,This unit cannot be reinforced.,"40mm [1],32mm [6],28.5mm [1]"
+Man-skewer Boltboyz,3,110,Infantry,,32mm
+✹  Marshcrawla Sloggoth,1,150 (-20),Monster,,105 × 70mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+✹ Bloodpelt Hunter,1,130 (-20),Any Gutbusters,"This Hero can join aTyrant’s regiment.",40mm
+Butcher,1,150,"Any Gorger Mawpack, Any Gutbusters",,50mm
+Firebelly,1,140,Any Gutbusters,,50mm
+✹  Frostlord on Stonehorn,1,320,"0-1 Voice of the Everwinter,Any Ogor Mawtribes",,120 × 92mm
+✹ F rostlord on Thundertusk,1,300,"0-1 Voice of the Everwinter,Any Ogor Mawtribes",,120 × 92mm
+✹  Huskard on Stonehorn,1,280,Any Beastclaw Raiders,"This Hero can join an eligibleregiment as a Voice of theEverwinter.",120 × 92mm
+✹ Huskard on Thundertusk,1,270,Any Beastclaw Raiders,"This Hero can join aneligible regiment as a Voice ofthe Everwinter.",120 × 92mm
+✹  Icebrow Hunter,1,120 (-10),Any Beastclaw Raiders,"This Hero can join aneligible regiment as a Voice ofthe Everwinter.",50mm
+"Kragnos, the End of Empires",1,580,Any Ogor Mawtribes,,130mm
+Slaughtermaster,1,140,Any Gutbusters,,105 × 70mm
+✹ Tyrant,1,160 (-20),"0-1 Bloodpelt Hunter,Any Ogor Mawtribes",,50mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+Frost Sabres,2,70,"Beastclaw Raiders, Beast",,60 × 35mm
+Gnoblar Scraplauncher,1,160,War Machine,,120 × 92mm
+✹  Gnoblars,20,110 (-10),Infantry,,25mm
+✹ Gorger Mawpack,5,240 (-20),Infantry,This unit cannot be reinforced.,50mm
+✹  Icefall Yhetees,3,100 (-20),"Beastclaw Raiders, Infantry",,50mm
+✹ I ronblaster,1,200 (-20),"Gutbusters, War Machine",,120 × 92mm
+Ironguts,4,240,"Gutbusters, Infantry",,40mm
+Leadbelchers,4,150,"Gutbusters, Infantry",,40mm
+Maneaters,3,160,Infantry,,50mm
+✹ Mournfang Pack,2,180 (-20),"Beastclaw Raiders, Cavalry",,90 × 52mm
+✹ Ogor Gluttons,6,240 (-10),"Gutbusters, Infantry",,40mm
+Stonehorn Beastriders,1,270,"Beastclaw Raiders, Monster",,120 × 92mm
+Thundertusk Beastriders,1,220,"Beastclaw Raiders, Monster",,120 × 92mm
+HEROES,UNIT SIZE,POINTS,REGIMENT OPTIONS,NOTES,BASE SIZE
+Beast-smasher Mega-Gargant,1,470,"0-1 Eager Lout, Any Sons of Behemat","This Hero can join an eligibleregiment as an Eager Lout.",130mm
+Gatebreaker Mega-Gargant,1,500,"0-1 Eager Lout, Any Sons of Behemat","This Hero can join an eligibleregiment as an Eager Lout.",130mm
+King Brodd,1,520,"0-1 Eager Lout, Any Sons of Behemat",,130mm
+"Kragnos, the End of Empires",1,580,"0-1 Eager Lout, Any Sons of Behemat",,130mm
+Kraken-eater Mega-Gargant,1,470,"0-1 Eager Lout, Any Sons of Behemat","This Hero can join an eligibleregiment as an Eager Lout.",130mm
+Warstomper Mega-Gargant,1,460,"0-1 Eager Lout, Any Sons of Behemat","This Hero can join an eligibleregiment as an Eager Lout.",130mm
+UNITS,UNIT SIZE,POINTS,RELEVANT KEY WORDS,NOTES,BASE SIZE
+✹ Mancrusher Gargant,1,130 (-30),Monster,,90 × 52mm
+✹  Mancrusher Mob,3,390 (-30),Monster,This unit cannot be reinforced.,90 × 52mm
