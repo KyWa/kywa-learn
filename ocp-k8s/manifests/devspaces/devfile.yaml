@@ -6,7 +6,7 @@ metadata:
 components:
   - name: tools
     container:
-      image: 
+      image: quay.io/devfile/universal-developer-image:ubi8-latest
       volumeMounts:
         - name: user-data
           path: /home/
