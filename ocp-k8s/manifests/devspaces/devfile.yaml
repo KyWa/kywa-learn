@@ -1,0 +1,15 @@
+---
+schemaVersion: 2.0.0
+metadata:
+  name: kyle-test
+  version: 1.0.0
+components:
+  - name: tools
+    container:
+      image: 
+      volumeMounts:
+        - name: user-data
+          path: /home/
+  - name: user-data
+    volume:
+      size: 10G
