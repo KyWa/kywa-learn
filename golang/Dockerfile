@@ -1,3 +1,3 @@
-FROM docker.io/golang:latest
+FROM registry.access.redhat.com/ubi9/go-toolset:latest
 
-WORKDIR /work
+WORKDIR /opt/app-root/src
