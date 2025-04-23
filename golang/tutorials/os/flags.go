@@ -29,7 +29,8 @@ func main() {
     fmt.Println("Boolean:", *boolArg)
     fmt.Println("StringVar:", strVar)
 
-    if len(flag.Args()) > 0 {
+    // flag.NArg is equal to the number of args after flags have been processed
+    if flag.NArg() > 0 {
         fmt.Println("Remainder Args:", flag.Args())
     }
 }
