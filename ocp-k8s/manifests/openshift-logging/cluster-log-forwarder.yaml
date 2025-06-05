@@ -1,48 +1,37 @@
+### OpenShift Logging v6
 ---
-apiVersion: logging.openshift.io/v1
+apiVersion: observability.openshift.io/v1
 kind: ClusterLogForwarder
 metadata:
   name: instance
   namespace: openshift-logging
 spec:
+  managementState: Managed
+  collector:
+    tolerations:
+    - operator: Exists
+  serviceAccount:
+    name: logcollector
   filters:
-  - name: trim-metadata-filters
-    type: prune 
-    prune: 
-      in: [.kubernetes.annotations, .kubernetes.labels, .kubernetes.namespace_labels, .kubernetes.namespace_id, .kubernetes.container_id, .kubernetes.container_image, .kubernetes.pod_id, .kubernetes.pod_owner, .kubernetes.pod_ip, .file]
+  - name: ocp-labels
+    type: openshiftLabels
+    openshiftLabels:
+      cluster_name: "ocp4-dev"
+  - name: mgmt-filters
+    type: prune
+    prune:
+      in: [.userAgent, .level, .openshift.cluster_id, .k8s_audit_level, .apiVersion, .auditID, .requestReceivedTimestamp, .requestURI, .user.extra."authentication.kubernetes.io/pod-uid", .user.groups, .user.uid, .sourceIPs, .source_type, .kubernetes.container_name, .kubernetes.namespace_name, .kubernetes.pod_name]
+
+  inputs: 
+  - name: APPLICATION
+
   outputs:
-   - name: fluentd-forwarder
-     type: fluentdForward 
-     syslog:
-       rfc: RFC5424
-     url: 'tcp://fluentd-forwarder.openshift-logging.svc:24224'
-   - name: rsyslog
-     type: syslog 
-     syslog:
-       addLogSource: true
-       facility: local1
-       rfc: RFC5424
-       msgID: YOUR_MSG_ID
-       procID: YOUR_PROC_ID
-       severity: informational
-     url: 'udp://YOUR_SYSLOG_SERVER:514'
+  - name: OUTPUT
+
   pipelines:
-   - name: applications
-     inputRefs: 
-     - application
-     outputRefs: 
-     - fluentd-forwarder
-     filterRefs: ["trim-metadata-filters"]
-     labels:
-       cluster_name: "YOUR_CLUSTER_NAME"
-     parse: json
-   - name: audit-syslog
-     inputRefs: 
-     - audit
-     outputRefs: 
-     - rsyslog
-     filterRefs: ["trim-metadata-filters"]
-     labels:
-       secure: "true" 
-       cluster_name: "YOUR_CLUSTER_NAME"
-     parse: json
+  - name: audit
+    inputRefs: 
+    - audit
+    outputRefs: 
+    - OUTPUT
+    filterRefs: ["ocp-labels","mgmt-filters"]
