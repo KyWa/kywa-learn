@@ -1,0 +1,18 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: EventListener
+metadata:
+  name: alertmanager-listener
+spec:
+  serviceAccountName: pipeline
+  triggers:
+    - name: alert-trigger
+      interceptors:
+        - ref:
+            name: "cel"
+          params:
+            - name: "filter"
+              value: "body.alerts.exists(a, a.labels.alertname == 'HighCPUUsage')"
+      bindings:
+        - ref: alert-binding
+      template:
+        ref: alert-template

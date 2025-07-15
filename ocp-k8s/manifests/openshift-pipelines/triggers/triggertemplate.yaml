@@ -1,0 +1,24 @@
+apiVersion: triggers.tekton.dev/v1beta1
+kind: TriggerTemplate
+metadata:
+  name: alert-template
+spec:
+  params:
+    - name: alertname
+    - name: instance
+    - name: summary
+  resourcetemplates:
+    - apiVersion: tekton.dev/v1beta1
+      kind: PipelineRun
+      metadata:
+        generateName: alert-triggered-pipeline-
+      spec:
+        pipelineRef:
+          name: your-pipeline-name
+        params:
+          - name: alertname
+            value: $(params.alertname)
+          - name: instance
+            value: $(params.instance)
+          - name: summary
+            value: $(params.summary)
