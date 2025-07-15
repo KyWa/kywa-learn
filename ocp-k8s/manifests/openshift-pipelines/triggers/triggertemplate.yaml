@@ -14,7 +14,7 @@ spec:
         generateName: alert-triggered-pipeline-
       spec:
         pipelineRef:
-          name: your-pipeline-name
+          name: alert-respnose-pipeline
         params:
           - name: alertname
             value: $(params.alertname)
