@@ -1,7 +1,3 @@
-# KyWa Learning Manifests
+# KyWa's Learning Catchall
 
-* Terraform
-* DigitalOcean
-* GitHub
-* Ansible
-* [Tekton](tekton)
+This repository is where all manifests/scripts are placed for various technologies. Everything here would have worked at one point on my machines, but shouldn't be considered "production ready code" by any means.
