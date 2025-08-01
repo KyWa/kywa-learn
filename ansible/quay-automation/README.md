@@ -1,4 +1,5 @@
 # Quay API Automation
+The following setup was tested with version 3.9 of Quay running on OpenShift 4.14 and version 1.3.0 of the `herve4m.quay` Ansible collection.
 
 ## Setup
 ```sh
@@ -19,6 +20,5 @@ ansible-playbook quay-playbook.yaml
 ```
 
 ## Files created
-
 PullSecret to put in a namespace: 
 - `manifests/YOUR_ORG-org-robot-secret.yaml`
