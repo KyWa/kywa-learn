@@ -5,7 +5,7 @@ metadata:
   name: index-builders
 data:
   custom-catalog-dockerfile: |
-    FROM quay.io/operator-framework/opm:latest
+    FROM quayserver.com/tools/index-builder:latest
     
     LABEL operators.operatorframework.io.index.configs.v1=/configs
     

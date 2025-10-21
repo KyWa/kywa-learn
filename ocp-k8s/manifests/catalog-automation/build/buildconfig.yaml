@@ -21,9 +21,9 @@ spec:
   source:
     type: dockerfile
     dockerfile: |
-      FROM quay.io/operator-framework/opm:v1.39 AS opm-builder
-      FROM registry.redhat.io/odf4/rook-ceph-rhel9-operator@sha256:61d5cb8bf9da4fc8e7ac10d49bce03d065a3638625620a6616d49e12273f4459
-      COPY --from=opm-builder /bin/opm /usr/bin/opm
+      FROM registry.redhat.io/openshift4/ose-tools-rhel9:latest
+      USER root
+      RUN curl -k -sL -o /tmp/opm.tgz https://mirror.openshift.com/pub/openshift-v4/x86_64/clients/ocp/latest-4.18/opm-linux-4.18.26.tar.gz && tar -xf /tmp/opm.tgz && mv /opm-rhel8 /usr/bin/opm
       USER 1001
       ENTRYPOINT ["/bin/bash"]
       CMD ["--help"]
