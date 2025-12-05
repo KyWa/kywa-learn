@@ -2,18 +2,20 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: namespaces
-  namespace: argocd
+  name: kywa-dev
+  namespace: openshift-gitops
 spec:
   destination:
-    namespace: default
+    namespace: kywa-dev
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: namespaces
-    repoURL: git@github.com:kywa/kywa-argo.git
+    path: argocd/config/apps/kywa-dev
+    repoURL: git@github.com:kywa/kywa-learn.git
     targetRevision: master
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

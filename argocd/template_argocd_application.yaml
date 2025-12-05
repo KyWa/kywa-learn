@@ -2,16 +2,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: tekton-pipelines
-  namespace: argocd
+  name: NAME
+  namespace: openshift-gitops
 spec:
   destination:
-    namespace: tekton-pipelines
+    namespace: NAMESPACE
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: config/tekton-pipelines
-    repoURL: git@github.com:kywa/kywa-argo.git
+    path: argocd/config/apps/NAME
+    repoURL: git@github.com:kywa/kywa-learn.git
     targetRevision: master
   syncPolicy:
     automated:
