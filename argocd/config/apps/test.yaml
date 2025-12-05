@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: argocd/config/apps/kywa-dev
+    path: argocd/config/kywa-dev
     repoURL: git@github.com:kywa/kywa-learn.git
     targetRevision: master
   syncPolicy:
