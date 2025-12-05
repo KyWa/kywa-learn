@@ -10,7 +10,7 @@ else
   oc create namespace openshift-gitops
   oc create -f op_gitops.yaml
   ## Generate GitOps Repo Secret
-  sed -e 's/SSH_KEY/'$(echo -n `/usr/bin/cat ~/.ssh/id_ed25519` | base64 -w0)'/g' secret_gitops.yaml | oc create -n openshift-gitops -f -
+  sed -e 's/SSH_KEY/'$(echo -n "`/usr/bin/cat ~/.ssh/id_ed25519`" | base64 -w0)'/g' secret_gitops.yaml | oc create -n openshift-gitops -f -
 fi
 
 }
