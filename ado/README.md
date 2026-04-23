@@ -1,7 +1,5 @@
 # Azure DevOps Learning
 
-ADO Instance: `dev.azure.com/unixislife`
-
 ## Goals
 - Self-Hosted ADO Container Image
 - Setting up Repositories
