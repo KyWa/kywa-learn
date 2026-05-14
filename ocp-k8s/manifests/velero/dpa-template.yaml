@@ -1,0 +1,49 @@
+---
+apiVersion: oadp.openshift.io/v1alpha1
+kind: DataProtectionApplication
+metadata:
+  name: oadp-dpa
+  annotations:
+    oadp.openshift.io/unsupported-node-agent-server-args: node-agent-config
+  labels:
+    app: backup
+spec:
+  backupImages: false
+  backupLocations:
+  - name: default
+    velero:
+      config:
+        profile: default
+        region: southcentral
+        s3ForcePathStyle: "true"
+        s3Url: https://URL
+      credential:
+        key: cloud
+        name: cloud-credentials
+      default: true
+      objectStorage:
+        bucket: velero
+        caCert: B64_CACERT
+        prefix: backups
+      provider: aws
+  configuration:
+    nodeAgent:
+      enable: true
+      uploaderType: kopia
+    velero:
+      defaultPlugins:
+      - openshift
+      - aws
+      - csi
+      logLevel: debug
+      podConfig:
+        tolerations:
+        - operator: Exists
+        resourceAllocations:
+          limits:
+            cpu: "2"
+            memory: 3Gi
+          requests:
+            cpu: 200m
+            memory: 1Gi
+      resourceTimeout: 60m

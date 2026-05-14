@@ -1,0 +1,24 @@
+apiVersion: velero.io/v1
+kind: Schedule
+metadata:
+  name: schedule-test
+  namespace: NAMESPACE
+  labels:
+    app: backups
+spec:
+  paused: false
+  schedule: 45 */4 * * *
+  template:
+    csiSnapshotTimeout: 1h0m0s
+    defaultVolumesToFsBackup: false
+    hooks: {}
+    includedNamespaces:
+    - NAMESPACE
+    includedResources:
+    - persistentvolumeclaims
+    - persistentvolumes
+    itemOperationTimeout: 4h0m0s
+    metadata: {}
+    snapshotMoveData: true
+    storageLocation: default
+    ttl: 8h

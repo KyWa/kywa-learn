@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: node-agent-config
+  labels:
+    app: backups
+data:
+  data-mover-prepare-timeout: "2h"
+  log-level: "debug"
